@@ -90,41 +90,44 @@
     }
   }
 
-  /* ------------------------------------------
-     RELEASE FORMATTING
-     ------------------------------------------ */
+/* ------------------------------------------
+   RELEASE FORMATTING
+   ------------------------------------------ */
 
-  function displayTitle(release) {
-    const ep =
-      String(release.ep || "")
-        .trim()
-        .toLowerCase() === "x";
+function displayTitle(release) {
+  const isEP =
+    String(release.ep || "").trim().toLowerCase() === "x";
 
-    return ep
-      ? `${release.title} EP`
-      : String(release.title);
-  }
+  if (isEP) {
+    const previewName = String(
+      release.youtube_ep_prew_name || ""
+    ).trim();
 
-  function formatDate(date) {
-    return String(date || "").replace(/_/g, ".");
-  }
-
-  function getVideoUrl(release) {
-    const ep =
-      String(release.ep || "")
-        .trim()
-        .toLowerCase() === "x";
-
-    if (ep) {
-      return (
-        youtubeEmbed(release.youtube_ep_prew_url) ||
-        youtubeEmbed(release.youtubeurl)
-      );
+    if (previewName) {
+      return previewName;
     }
-
-    return youtubeEmbed(release.youtubeurl);
   }
 
+  return String(release.title || "").trim();
+}
+
+function formatDate(date) {
+  return String(date || "").replace(/_/g, ".");
+}
+
+function getVideoUrl(release) {
+  const isEP =
+    String(release.ep || "").trim().toLowerCase() === "x";
+
+  if (isEP) {
+    return (
+      youtubeEmbed(release.youtube_ep_prew_url) ||
+      youtubeEmbed(release.youtubeurl)
+    );
+  }
+
+  return youtubeEmbed(release.youtubeurl);
+}
   /* ------------------------------------------
      CREATE VIDEO
      ------------------------------------------ */

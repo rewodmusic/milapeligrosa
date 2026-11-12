@@ -23,6 +23,7 @@
   <script src="js/events.js" defer></script>
   <script src="js/newsletter.js" defer></script>
   <script src="js/videos.js" defer></script>
+  <script src="js/contact.js" defer></script>
 </head>
 <body>
   <!-- One portrait image, permanently attached to the visible screen. -->
@@ -653,6 +654,308 @@
   </div>
 </section>
 
+
+<!-- ==========================================
+     SECTION 07 — BUSINESS INQUIRIES
+     ========================================== -->
+
+<section
+  id="business"
+  class="business"
+  aria-labelledby="business-heading"
+>
+  <div class="business__inner">
+
+    <!-- EDITORIAL HEADING -->
+
+    <div class="business__heading-row">
+
+      <span class="business__index">
+        07 / CONTACT
+      </span>
+
+      <h2 id="business-heading" class="business__heading">
+        LET'S<br>
+        WORK <span>TOGETHER</span><i>*</i>
+      </h2>
+
+      <span class="business__heading-note">
+        OPEN FOR IDEAS ♡
+      </span>
+
+    </div>
+
+    <!-- INTRO -->
+
+    <div class="business__intro-row">
+
+      <p class="business__intro">
+        have something in mind?<br>
+        let's make it happen &lt;3
+      </p>
+
+      <span class="business__intro-decoration" aria-hidden="true">
+        ♡
+      </span>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+
+    <form
+      id="business-form"
+      class="business__form"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+    >
+
+      <!-- WEB3FORMS -->
+
+      <input
+        type="hidden"
+        name="access_key"
+        value="eaef9ff9-9c8c-4c66-8352-98eadcff6fe5"
+      >
+
+      <input
+        type="hidden"
+        name="subject"
+        value="New Business Inquiry - Mila Peligrosa"
+      >
+
+      <input
+        type="hidden"
+        name="from_name"
+        value="Mila Peligrosa Website"
+      >
+
+      <!-- ANTI-SPAM -->
+
+      <input
+        type="checkbox"
+        name="botcheck"
+        tabindex="-1"
+        autocomplete="off"
+        style="display:none"
+      >
+
+      <!-- FORM TOP BAR -->
+
+      <div class="business__form-top">
+
+        <span>BUSINESS INQUIRIES / 001</span>
+        <span>FROM YOU, TO MILA ♡</span>
+
+      </div>
+
+      <!-- INQUIRY TYPE -->
+
+      <fieldset class="business__fieldset">
+
+        <legend class="business__label">
+          01 / WHAT'S THIS ABOUT? *
+        </legend>
+
+        <div class="business__categories">
+
+          <label class="business__category">
+            <input
+              type="radio"
+              name="inquiry_type"
+              value="Brand Deal"
+              required
+            >
+            <span>BRAND DEAL</span>
+          </label>
+
+          <label class="business__category">
+            <input
+              type="radio"
+              name="inquiry_type"
+              value="Booking"
+            >
+            <span>BOOKING</span>
+          </label>
+
+          <label class="business__category">
+            <input
+              type="radio"
+              name="inquiry_type"
+              value="Collaboration"
+            >
+            <span>COLLAB</span>
+          </label>
+
+          <label class="business__category">
+            <input
+              type="radio"
+              name="inquiry_type"
+              value="Other"
+            >
+            <span>OTHER</span>
+          </label>
+
+        </div>
+
+      </fieldset>
+
+      <!-- NAME + EMAIL -->
+
+      <div class="business__field-grid">
+
+        <div class="business__field">
+
+          <label for="business-name" class="business__label">
+            02 / YOUR NAME *
+          </label>
+
+          <input
+            id="business-name"
+            class="business__input"
+            type="text"
+            name="name"
+            placeholder="your name..."
+            autocomplete="name"
+            maxlength="100"
+            required
+          >
+
+        </div>
+
+        <div class="business__field">
+
+          <label for="business-email" class="business__label">
+            03 / YOUR EMAIL *
+          </label>
+
+          <input
+            id="business-email"
+            class="business__input"
+            type="email"
+            name="email"
+            placeholder="your@email.com"
+            autocomplete="email"
+            maxlength="254"
+            required
+          >
+
+        </div>
+
+      </div>
+
+      <!-- COMPANY -->
+
+      <div class="business__field">
+
+        <label for="business-company" class="business__label">
+          04 / COMPANY OR ORGANIZATION
+          <span>OPTIONAL</span>
+        </label>
+
+        <input
+          id="business-company"
+          class="business__input"
+          type="text"
+          name="company"
+          placeholder="who are you representing?"
+          autocomplete="organization"
+          maxlength="150"
+        >
+
+      </div>
+
+      <!-- MESSAGE -->
+
+      <div class="business__field">
+
+        <label for="business-message" class="business__label">
+          05 / TELL ME EVERYTHING *
+        </label>
+
+        <textarea
+          id="business-message"
+          class="business__textarea"
+          name="message"
+          placeholder="tell me about your idea, project, event, or anything else..."
+          rows="7"
+          minlength="10"
+          maxlength="5000"
+          required
+        ></textarea>
+
+        <div class="business__field-bottom">
+          <span>THE MORE DETAILS, THE BETTER ♡</span>
+          <span id="business-char-count">0 / 5000</span>
+        </div>
+
+      </div>
+
+      <!-- PRIVACY -->
+
+      <label class="business__privacy">
+
+        <input
+          type="checkbox"
+          id="business-consent"
+          name="privacy_consent"
+          value="Agreed"
+          required
+        >
+
+        <span>
+          i agree to my details being used to respond
+          to this inquiry and understand that the
+          form is processed via Web3Forms.
+          <a
+            href="https://web3forms.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            privacy policy ↗
+          </a>
+        </span>
+
+      </label>
+
+      <!-- SEND BUTTON -->
+
+      <button
+        id="business-submit"
+        class="business__submit"
+        type="submit"
+      >
+
+        <span class="business__submit-text">
+          SEND INQUIRY
+        </span>
+
+        <span class="business__submit-arrow" aria-hidden="true">
+          ↗
+        </span>
+
+      </button>
+
+      <!-- RESPONSE -->
+
+      <p
+        id="business-feedback"
+        class="business__feedback"
+        role="status"
+        aria-live="polite"
+        hidden
+      ></p>
+
+      <div class="business__form-bottom">
+        <span>ONLY BUSINESS INQUIRIES, PLEASE ♡</span>
+        <span>LET'S CREATE SOMETHING</span>
+      </div>
+
+    </form>
+
+
+
+  </div>
+</section>
 
 
 
