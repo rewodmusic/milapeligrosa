@@ -325,11 +325,11 @@ a.service:focus-visible { outline:2px solid var(--cyan); outline-offset:2px; }
 
     /* VONALKÓD MELLETTI VÉKONY FELIRAT */
 
-    --barcode-thin-font: 10px;
+    --barcode-thin-font: 14px;
 
     /* MILA / PE / LI / GRO / SA */
 
-    --barcode-bold-font: 16px;
+    --barcode-bold-font: 17px;
   }
 
 }
