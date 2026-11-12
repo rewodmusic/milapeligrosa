@@ -5786,3 +5786,36 @@ a.hero__social:focus-visible::after {
   }
 
 }
+
+
+
+
+
+/* ==========================================
+   MILA — iPHONE SAFE AREA BACKGROUND FIX
+   ========================================== */
+
+@media (max-width: 767px) {
+
+  /* Háttérkép közvetlenül a dokumentumon is */
+  html {
+    background-color: #0b0b0e !important;
+    background-image: url("../img/bg.jpg") !important;
+    background-position: center top !important;
+    background-size: auto 100lvh !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+  }
+
+  body {
+    background: transparent !important;
+  }
+
+  /* A már működő fix háttér marad */
+  .page-background {
+    background-image: url("../img/bg.jpg") !important;
+    background-position: center center !important;
+    background-size: cover !important;
+  }
+
+}
