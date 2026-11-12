@@ -5671,3 +5671,13 @@ a.hero__social:focus-visible::after {
   }
 
 }
+
+
+
+/* MOBILE — TEMPORARY MASK TEST */
+
+@media (max-width: 767px) {
+  body::after {
+    display: none !important;
+  }
+}
