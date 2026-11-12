@@ -305,8 +305,8 @@ a.service:focus-visible { outline:2px solid var(--cyan); outline-offset:2px; }
 
     /* BAL OLDALI FELIRATOK */
 
-    --left-start: 16dvh;       /* Kezdési magasság */
-    --left-height: 74dvh;      /* Teljes blokk magassága */
+    --left-start: 10dvh;       /* Kezdési magasság */
+    --left-height: 80dvh;      /* Teljes blokk magassága */
     --left-font: 12px;         /* Feliratok betűmérete */
 
     /* ELVÁLASZTÓ VONALAK */
@@ -5812,7 +5812,7 @@ a.hero__social:focus-visible::after {
        MILA PELIGROSA — FŐCÍM
        ====================================== */
 
-    --hero-title-size: 50px;
+    --hero-title-size: 35px;
     --hero-title-top: 30px;
     --hero-title-stretch: 1.9;
 
@@ -5820,10 +5820,10 @@ a.hero__social:focus-visible::after {
        MUSIC ARTIST, CREATIVE, SONGWRITER
        ====================================== */
 
-    --hero-subtitle-size: 17px;
+    --hero-subtitle-size: 15px;
 
     /* CÍM ÉS ALCÍM KÖZÖTTI TÁVOLSÁG */
-    --hero-title-subtitle-gap: 55px;
+    --hero-title-subtitle-gap: 45px;
 
     /* ======================================
        <333* — POZÍCIÓ
