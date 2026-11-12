@@ -5674,10 +5674,115 @@ a.hero__social:focus-visible::after {
 
 
 
-/* MOBILE — TEMPORARY MASK TEST */
 
-@media (max-width: 767px) {
-  body::after {
-    display: none !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   MILA — MOBILE BACKGROUND FIX
+   Simple fixed background
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+
+  html {
+    background: #0b0b0e;
   }
+
+  body {
+    background: transparent !important;
+    overflow-x: clip;
+  }
+
+  /* Egyetlen teljes képernyős háttér */
+
+  .page-background {
+    position: fixed !important;
+
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    z-index: 0 !important;
+
+    background-image: url("../img/bg.jpg") !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+    pointer-events: none !important;
+  }
+
+  .page-vignette {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* Minden szekció a háttér fölött */
+
+  .hero,
+  .latest,
+  .events,
+  .library,
+  .newsletter,
+  .latest-videos,
+  .business {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* A magazinos keret marad legfelül */
+
+  .editorial-frame {
+    z-index: 20 !important;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE HERO — FULL SCREEN
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+
+  .hero {
+    position: relative;
+
+    width: 100% !important;
+
+    height: 100svh !important;
+    min-height: 100svh !important;
+
+    overflow: hidden !important;
+    isolation: isolate;
+
+    background: transparent !important;
+  }
+
+  .hero__video {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center center;
+  }
+
 }
