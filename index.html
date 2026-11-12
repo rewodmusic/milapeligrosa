@@ -22,6 +22,7 @@
   <script src="js/app.js" defer></script>
   <script src="js/events.js" defer></script>
   <script src="js/newsletter.js" defer></script>
+  <script src="js/newsletter-connect.js" defer></script>
   <script src="js/videos.js" defer></script>
   <script src="js/contact.js" defer></script>
 </head>
@@ -453,70 +454,88 @@
       </div>
 
 
-      <!-- EMAIL FORM -->
 
-      <form
-        class="newsletter__form"
-        id="newsletter-form"
-        novalidate
-      >
+<!-- EMAIL FORM -->
 
-        <label
-          class="newsletter__label"
-          for="newsletter-email"
-        >
-          YOUR EMAIL ADDRESS
-        </label>
+<form
+  class="newsletter__form"
+  id="newsletter-form"
+  novalidate
+>
 
-        <div class="newsletter__input-row">
+  <label
+    class="newsletter__label"
+    for="newsletter-email"
+  >
+    YOUR EMAIL ADDRESS
+  </label>
 
-          <input
-            class="newsletter__input"
-            id="newsletter-email"
-            name="email"
-            type="email"
-            placeholder="you@example.com"
-            autocomplete="email"
-            inputmode="email"
-            maxlength="254"
-            required
-          >
+  <div class="newsletter__input-row">
 
-          <button
-            class="newsletter__submit"
-            type="submit"
-          >
-            <span>SUBSCRIBE</span>
-            <span aria-hidden="true">↗</span>
-          </button>
+    <input
+      class="newsletter__input"
+      id="newsletter-email"
+      name="email"
+      type="email"
+      placeholder="you@example.com"
+      autocomplete="email"
+      inputmode="email"
+      maxlength="254"
+      required
+    >
 
-        </div>
+    <button
+      class="newsletter__submit"
+      type="submit"
+    >
+      <span>SUBSCRIBE</span>
+      <span aria-hidden="true">↗</span>
+    </button>
 
-        <p
-          class="newsletter__feedback"
-          id="newsletter-feedback"
-          role="status"
-          aria-live="polite"
-          hidden
-        ></p>
+  </div>
 
-        <p
-          class="newsletter__fineprint"
-          id="newsletter-note"
-        >
-          occasional letters. no spam. promise ♡
-        </p>
+  <!-- NEWSLETTER CONSENT -->
 
-      </form>
+  <label class="newsletter__consent">
+    <input
+      id="newsletter-consent"
+      type="checkbox"
+      required
+    >
 
-      <span
-        class="newsletter__side-number"
-        aria-hidden="true"
-      >
-        04
-      </span>
+    <span>
+      i agree to receive occasional emails from mila.
+      i can unsubscribe anytime ♡
+    </span>
+  </label>
 
-    </div>
+  <!-- SUBMISSION FEEDBACK -->
+
+  <p
+    class="newsletter__feedback"
+    id="newsletter-feedback"
+    role="status"
+    aria-live="polite"
+    hidden
+  ></p>
+
+  <p
+    class="newsletter__fineprint"
+    id="newsletter-note"
+  >
+    occasional letters. no spam. promise ♡
+  </p>
+
+</form>
+
+<span
+  class="newsletter__side-number"
+  aria-hidden="true"
+>
+  04
+</span>
+
+</div>
 
 
     <!-- COFFEE AREA -->

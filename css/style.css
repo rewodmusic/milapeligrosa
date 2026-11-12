@@ -5512,3 +5512,68 @@ a.hero__social:focus-visible::after {
     margin-top: 0 !important;
   }
 }
+
+
+
+
+/* ==========================================
+   MILA NEWSLETTER — LIVE SUBSCRIPTION
+   ========================================== */
+
+.newsletter__consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin: 17px 0 6px;
+
+  color: #60DDE1;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  line-height: 1.6;
+
+  cursor: pointer;
+}
+
+.newsletter__consent input {
+  flex: 0 0 16px;
+
+  width: 16px;
+  height: 16px;
+  margin: 1px 0 0;
+
+  accent-color: #F16AC7;
+  cursor: pointer;
+}
+
+.newsletter__feedback {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #60DDE1;
+}
+
+.newsletter__feedback[data-state="error"] {
+  color: #F16AC7;
+}
+
+.newsletter__feedback[data-state="success"] {
+  color: #60DDE1;
+}
+
+.newsletter__feedback[hidden] {
+  display: none !important;
+}
+
+.newsletter__submit:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+
+@media (max-width: 767px) {
+  .newsletter__consent {
+    font-size: 9px;
+    gap: 8px;
+  }
+}
