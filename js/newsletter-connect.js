@@ -91,11 +91,19 @@
           "Content-Type": "application/json"
         },
 
-body: JSON.stringify({
-  email,
-  consent: true,
-  website: document.getElementById("newsletter-website")?.value || ""
-})
+
+const response = await fetch(WORKER_URL, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    email,
+    consent: true,
+    website: document.getElementById("newsletter-website")?.value || ""
+  })
+});
+
 
 
       const data = await response.json();
