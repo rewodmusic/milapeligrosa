@@ -305,13 +305,13 @@ a.service:focus-visible { outline:2px solid var(--cyan); outline-offset:2px; }
 
     /* BAL OLDALI FELIRATOK */
 
-    --left-start: 25dvh;       /* Kezdési magasság */
-    --left-height: 56dvh;      /* Teljes blokk magassága */
+    --left-start: 21dvh;       /* Kezdési magasság */
+    --left-height: 64dvh;      /* Teljes blokk magassága */
     --left-font: 13px;         /* Feliratok betűmérete */
 
     /* ELVÁLASZTÓ VONALAK */
 
-    --line-length: 23px;       /* Vonalak hossza */
+    --line-length: 18px;       /* Vonalak hossza */
     --line-thickness: 1px;     /* Vonalak vastagsága */
 
     /* VONALKÓD */
@@ -325,11 +325,11 @@ a.service:focus-visible { outline:2px solid var(--cyan); outline-offset:2px; }
 
     /* VONALKÓD MELLETTI VÉKONY FELIRAT */
 
-    --barcode-thin-font: 20px;
+    --barcode-thin-font: 10px;
 
     /* MILA / PE / LI / GRO / SA */
 
-    --barcode-bold-font: 24px;
+    --barcode-bold-font: 16px;
   }
 
 }
@@ -5789,35 +5789,3 @@ a.hero__social:focus-visible::after {
 
 
 
-
-
-/* ==========================================
-   MILA — MOBILE ROOT BACKGROUND TEST
-   ========================================== */
-
-@media (max-width: 767px) {
-
-  html {
-    background: #0b0b0e url("../img/bg.jpg")
-      center center / cover no-repeat !important;
-
-    min-height: 100%;
-  }
-
-  body {
-    background: transparent !important;
-    min-height: 100%;
-  }
-
-  /* Ne legyen második, külön fix háttérkép */
-  .page-background {
-    display: none !important;
-  }
-
-  /* A sötétítő dekoráció maradhat */
-  .page-vignette {
-    z-index: 0 !important;
-    pointer-events: none !important;
-  }
-
-}
