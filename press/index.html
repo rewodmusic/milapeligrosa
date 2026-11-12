@@ -1,0 +1,694 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#101010">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Press Kit — Mila Peligrosa</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    /* ==========================================
+       MILA PELIGROSA — PRESS KIT
+       ========================================== */
+
+    :root {
+      --cyan: #60DDE1;
+      --pink: #F16AC7;
+      --white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-height: 100%;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+
+      color: var(--white);
+      background: #101010;
+
+      font-family: "Outfit", sans-serif;
+
+      overflow-x: clip;
+    }
+
+    /* BACKGROUND */
+
+    .press-background {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+
+      background-image: url("../img/bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .press-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+
+      background: rgba(0, 0, 0, .32);
+      pointer-events: none;
+    }
+
+    /* PAGE LAYOUT */
+
+    .press {
+      width: 100%;
+      min-height: 100vh;
+      min-height: 100dvh;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      padding: 90px 24px 75px;
+    }
+
+    .press__inner {
+      width: 100%;
+      max-width: 570px;
+      margin: 0 auto;
+    }
+
+    /* LOGO */
+
+    .press__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-bottom: 65px;
+      text-align: center;
+    }
+
+    .press__logo {
+      display: block;
+      width: min(285px, 75%);
+      height: auto;
+      object-fit: contain;
+
+      margin-bottom: 27px;
+    }
+
+    .press__eyebrow {
+      margin: 0;
+
+      color: var(--pink);
+
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .12em;
+    }
+
+    /* DOWNLOAD AREA */
+
+    .press__downloads {
+      width: 100%;
+    }
+
+    .press__topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+
+      padding: 13px 0;
+
+      border-top: 1px solid var(--cyan);
+      border-bottom: 1px solid var(--cyan);
+
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .065em;
+
+      color: var(--cyan);
+    }
+
+    .press__count {
+      color: var(--pink);
+      white-space: nowrap;
+    }
+
+    /* FILE LIST */
+
+    .press__list {
+      width: 100%;
+    }
+
+    .press__file {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+
+      width: 100%;
+      min-width: 0;
+
+      padding: 21px 0;
+
+      border-bottom: 1px solid rgba(96,221,225,.38);
+
+      transition: background .2s ease;
+    }
+
+    .press__file-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      min-width: 0;
+      flex: 1;
+    }
+
+    /* FILE TYPE ICON */
+
+    .press__file-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      flex: 0 0 49px;
+
+      width: 49px;
+      height: 49px;
+
+      border: 1px solid var(--pink);
+
+      background: rgba(241,106,199,.08);
+      color: var(--pink);
+    }
+
+    .press__file-icon svg {
+      width: 25px;
+      height: 25px;
+
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* FILE NAME */
+
+    .press__file-copy {
+      min-width: 0;
+    }
+
+    .press__file-name {
+      margin: 0 0 5px;
+
+      color: #fff;
+
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 25px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: .005em;
+
+      overflow-wrap: anywhere;
+    }
+
+    .press__file-extension {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .08em;
+
+      color: var(--cyan);
+    }
+
+    /* DOWNLOAD BUTTON */
+
+    .press__download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+
+      flex: none;
+
+      min-height: 40px;
+      padding: 10px 13px;
+
+      border: 1px solid var(--pink);
+      background: rgba(241,106,199,.08);
+
+      color: var(--pink);
+      text-decoration: none;
+
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .02em;
+
+      cursor: pointer;
+
+      transition:
+        background .2s ease,
+        color .2s ease,
+        transform .2s ease;
+    }
+
+    .press__download svg {
+      width: 15px;
+      height: 15px;
+
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .press__download:hover {
+      background: var(--pink);
+      color: #101010;
+      transform: translateY(-2px);
+    }
+
+    .press__download:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 3px;
+    }
+
+    /* LOADING / EMPTY / ERROR */
+
+    .press__status {
+      padding: 35px 0;
+
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 11px;
+      text-align: center;
+
+      color: var(--pink);
+    }
+
+    /* FOOTER */
+
+    .press__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+
+      padding-top: 24px;
+
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: .04em;
+
+      color: var(--cyan);
+    }
+
+    .press__footer span:last-child {
+      color: var(--pink);
+    }
+
+    /* ==========================================
+       MOBILE
+       ========================================== */
+
+    @media (max-width: 767px) {
+      .press {
+        padding: 75px 25px 65px;
+      }
+
+      .press__inner {
+        max-width: 470px;
+      }
+
+      .press__header {
+        margin-bottom: 52px;
+      }
+
+      .press__logo {
+        width: min(235px, 80%);
+      }
+
+      .press__file {
+        padding: 17px 0;
+        gap: 8px;
+      }
+
+      .press__file-info {
+        gap: 10px;
+      }
+
+      .press__file-icon {
+        flex-basis: 40px;
+        width: 40px;
+        height: 40px;
+      }
+
+      .press__file-icon svg {
+        width: 21px;
+        height: 21px;
+      }
+
+      .press__file-name {
+        font-size: 21px;
+      }
+
+      .press__download {
+        padding: 9px;
+        font-size: 9px;
+        gap: 5px;
+      }
+
+      .press__download svg {
+        width: 13px;
+        height: 13px;
+      }
+
+      .press__footer {
+        font-size: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .press__download {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+
+  <div class="press-background" aria-hidden="true"></div>
+  <div class="press-overlay" aria-hidden="true"></div>
+
+  <!-- PRESS PAGE -->
+
+  <main class="press">
+    <div class="press__inner">
+
+      <!-- LOGO -->
+
+      <header class="press__header">
+
+        <img
+          class="press__logo"
+          src="../img/logo.png"
+          alt="Mila Peligrosa"
+        >
+
+        <p class="press__eyebrow">
+          OFFICIAL PRESS KIT ♡
+        </p>
+
+      </header>
+
+      <!-- DOWNLOADS -->
+
+      <section
+        class="press__downloads"
+        aria-label="Press downloads"
+      >
+
+        <div class="press__topline">
+          <span>AVAILABLE FILES</span>
+          <span id="press-count" class="press__count">
+            — FILES
+          </span>
+        </div>
+
+        <div
+          id="press-files"
+          class="press__list"
+          aria-live="polite"
+        >
+          <p class="press__status">
+            LOADING FILES...
+          </p>
+        </div>
+
+      </section>
+
+      <!-- FOOTER -->
+
+      <footer class="press__footer">
+        <span>MILA PELIGROSA / PRESS</span>
+        <span>MADE WITH LOVE ♡</span>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    /* ==========================================
+       PRESS KIT — DYNAMIC FILE LIST
+       ========================================== */
+
+    (() => {
+      "use strict";
+
+      const CONFIG = {
+        database: "files.json",
+        downloadFolder: "downloads/",
+        allowedExtensions: ["pdf", "img", "zip", "mp3"]
+      };
+
+      const list = document.getElementById("press-files");
+      const count = document.getElementById("press-count");
+
+      /* FILE TYPE ICONS */
+
+      const icons = {
+        pdf: `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 2h7l5 5v15H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/>
+            <path d="M14 2v6h5"/>
+            <path d="M9 13h6M9 17h4"/>
+          </svg>
+        `,
+
+        img: `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="m3 17 5-5 4 4 3-3 6 6"/>
+          </svg>
+        `,
+
+        zip: `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 2h9l4 4v16H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/>
+            <path d="M14 2v5h5"/>
+            <path d="M11 3v2m0 2v2m0 2v2"/>
+            <path d="M9 16h4v3H9z"/>
+          </svg>
+        `,
+
+        mp3: `
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 18V5l12-2v13"/>
+            <ellipse cx="6" cy="18" rx="3" ry="2"/>
+            <ellipse cx="18" cy="16" rx="3" ry="2"/>
+          </svg>
+        `
+      };
+
+      const downloadIcon = `
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3v12"/>
+          <path d="m7 10 5 5 5-5"/>
+          <path d="M4 17v4h16v-4"/>
+        </svg>
+      `;
+
+      /* SAFE DOWNLOAD PATH */
+
+      function getDownloadUrl(filename) {
+        const name = String(filename || "").trim();
+
+        if (
+          !name ||
+          name === "." ||
+          name === ".." ||
+          name.includes("/") ||
+          name.includes("\\") ||
+          name.includes("\0")
+        ) {
+          return null;
+        }
+
+        return CONFIG.downloadFolder +
+          encodeURIComponent(name);
+      }
+
+      /* CREATE FILE ROW */
+
+      function createFileRow(file) {
+        const extension = String(
+          file.extension || ""
+        ).trim().toLowerCase();
+
+        if (!CONFIG.allowedExtensions.includes(extension)) {
+          return null;
+        }
+
+        const filename = String(file.file_name || "").trim();
+        const fileUrl = getDownloadUrl(filename);
+
+        if (!fileUrl) return null;
+
+        const preview = String(
+          file.file_prew || filename
+        ).trim();
+
+        const row = document.createElement("div");
+        row.className = "press__file";
+
+        const info = document.createElement("div");
+        info.className = "press__file-info";
+
+        const icon = document.createElement("div");
+        icon.className = "press__file-icon";
+        icon.innerHTML = icons[extension];
+
+        const copy = document.createElement("div");
+        copy.className = "press__file-copy";
+
+        const name = document.createElement("h3");
+        name.className = "press__file-name";
+        name.textContent = preview;
+
+        const type = document.createElement("span");
+        type.className = "press__file-extension";
+        type.textContent = extension.toUpperCase();
+
+        copy.append(name, type);
+        info.append(icon, copy);
+
+        const download = document.createElement("a");
+        download.className = "press__download";
+        download.href = fileUrl;
+        download.download = filename;
+
+/* ==========================================
+   iOS / iPadOS SAFARI — PDF HANDLING
+   ========================================== */
+
+const isIOS =
+  /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+  (
+    navigator.platform === "MacIntel" &&
+    navigator.maxTouchPoints > 1
+  );
+
+if (isIOS && extension === "pdf") {
+  // Open PDF in a new tab instead of replacing
+  // the Press page or forcing a download.
+
+  download.removeAttribute("download");
+
+  download.target = "_blank";
+  download.rel = "noopener noreferrer";
+}
+
+        download.setAttribute(
+          "aria-label",
+          `Download ${preview}`
+        );
+
+        const downloadText = document.createElement("span");
+        downloadText.textContent = "DOWNLOAD";
+
+        download.append(downloadText);
+
+        const arrow = document.createElement("span");
+        arrow.innerHTML = downloadIcon;
+        arrow.setAttribute("aria-hidden", "true");
+
+        download.append(arrow);
+
+        row.append(info, download);
+
+        return row;
+      }
+
+      /* LOAD FILES */
+
+      async function init() {
+        try {
+          const response = await fetch(CONFIG.database, {
+            cache: "no-cache"
+          });
+
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          const data = await response.json();
+
+          if (!Array.isArray(data)) {
+            throw new Error("Invalid files.json format");
+          }
+
+          const fragment = document.createDocumentFragment();
+
+          let total = 0;
+
+          data.forEach((file) => {
+            const row = createFileRow(file);
+
+            if (!row) return;
+
+            fragment.appendChild(row);
+            total++;
+          });
+
+          list.replaceChildren(fragment);
+
+          count.textContent =
+            `${String(total).padStart(2, "0")} FILES`;
+
+          if (total === 0) {
+            const empty = document.createElement("p");
+            empty.className = "press__status";
+            empty.textContent = "NO FILES AVAILABLE ♡";
+
+            list.appendChild(empty);
+          }
+
+        } catch (error) {
+          console.error("Press files error:", error);
+
+          list.textContent = "COULDN'T LOAD FILES ♡";
+          count.textContent = "00 FILES";
+        }
+      }
+
+      init();
+    })();
+  </script>
+
+</body>
+</html>
