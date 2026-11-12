@@ -54,17 +54,16 @@
       if (buttonText) buttonText.textContent = "SENDING...";
 
       try {
-        const response = await fetch(WORKER_URL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            email: email,
-            consent: true,
-            website: websiteInput?.value || ""
-          })
-        });
+const response = await fetch(WORKER_URL, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    email,
+    consent: true
+  })
+});
 
         const result = await response.json();
 

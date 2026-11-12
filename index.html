@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/app.js" defer></script>
   <script src="js/events.js" defer></script>
-  <script src="js/newsletter-connect.js?v=4" defer></script>
+  <script src="js/newsletter-connect.js?v=5" defer></script>
   <script src="js/videos.js" defer></script>
   <script src="js/contact.js" defer></script>
 </head>
@@ -460,21 +460,12 @@
   class="newsletter__form"
   id="newsletter-form"
   novalidate
+  onsubmit="event.preventDefault();"
 >
 
 <!-- ANTI-SPAM HONEYPOT — DO NOT REMOVE -->
 
-<div class="newsletter__trap" aria-hidden="true">
-  <label for="newsletter-website">Website</label>
 
-  <input
-    id="newsletter-website"
-    name="website"
-    type="text"
-    tabindex="-1"
-    autocomplete="off"
-  >
-</div>
 
   <label
     class="newsletter__label"
