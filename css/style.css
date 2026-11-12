@@ -5632,3 +5632,42 @@ a.hero__social:focus-visible::after {
   }
 
 }
+
+
+
+
+/* ==========================================
+   MOBILE — HORIZONTAL OVERFLOW FIX
+   ========================================== */
+
+@media (max-width: 767px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip !important;
+  }
+
+  .hero {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden !important;
+  }
+
+  .hero__header {
+    width: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .hero__name {
+    width: 100%;
+    font-size: clamp(26px, 7.2vw, 43px) !important;
+    white-space: nowrap;
+    transform: translateY(5px) scaleY(1.9) !important;
+    transform-origin: center top;
+  }
+
+}
