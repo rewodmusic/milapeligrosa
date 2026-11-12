@@ -5589,3 +5589,46 @@ a.hero__social:focus-visible::after {
   clip-path: inset(50%) !important;
   white-space: nowrap !important;
 }
+
+
+
+/* ==========================================
+   EDITORIAL FOOTER MASK — iOS SAFARI FIX
+   MOBILE + DESKTOP
+   ========================================== */
+
+@media (max-width: 1559px) {
+
+  body::after {
+    content: "";
+
+    position: fixed !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100dvh !important;
+
+    background-image: url("../img/bg.jpg") !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+
+    /* Csak az alsó sáv marad látható */
+    -webkit-clip-path: inset(
+      calc(100% - var(--footer-block-height)) 0 0 0
+    ) !important;
+
+    clip-path: inset(
+      calc(100% - var(--footer-block-height)) 0 0 0
+    ) !important;
+
+    z-index: 10 !important;
+    pointer-events: none !important;
+  }
+
+  .editorial-frame {
+    z-index: 20 !important;
+  }
+
+}
