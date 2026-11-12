@@ -6091,3 +6091,20 @@ a.hero__social:focus-visible::after {
   }
 
 }
+
+
+
+/* ==========================================
+   📱 iOS SAFARI — INPUT AUTO ZOOM FIX
+   MOBILE ONLY
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+
+}
