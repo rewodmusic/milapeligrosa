@@ -305,9 +305,9 @@ a.service:focus-visible { outline:2px solid var(--cyan); outline-offset:2px; }
 
     /* BAL OLDALI FELIRATOK */
 
-    --left-start: 21dvh;       /* Kezdési magasság */
-    --left-height: 64dvh;      /* Teljes blokk magassága */
-    --left-font: 13px;         /* Feliratok betűmérete */
+    --left-start: 16dvh;       /* Kezdési magasság */
+    --left-height: 74dvh;      /* Teljes blokk magassága */
+    --left-font: 12px;         /* Feliratok betűmérete */
 
     /* ELVÁLASZTÓ VONALAK */
 
@@ -5789,3 +5789,108 @@ a.hero__social:focus-visible::after {
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   📱 MILA — MOBILE DESIGN CONTROLS
+   HERO + LATEST RELEASE DATE
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+
+  :root {
+
+    /* ======================================
+       MILA PELIGROSA — FŐCÍM
+       ====================================== */
+
+    --hero-title-size: 50px;
+    --hero-title-top: 30px;
+    --hero-title-stretch: 1.9;
+
+    /* ======================================
+       MUSIC ARTIST, CREATIVE, SONGWRITER
+       ====================================== */
+
+    --hero-subtitle-size: 17px;
+
+    /* CÍM ÉS ALCÍM KÖZÖTTI TÁVOLSÁG */
+    --hero-title-subtitle-gap: 55px;
+
+    /* ======================================
+       <333* — POZÍCIÓ
+       ====================================== */
+
+    --hero-heart-top: 35%;
+    --hero-heart-right: 9%;
+    --hero-heart-size: 35px;
+
+    /* ======================================
+       LATEST RELEASE — DÁTUM
+       ====================================== */
+
+    /* Pozitív érték = lejjebb */
+    --latest-date-down: 12px;
+  }
+
+
+  /* ======================================
+     HERO MAIN TITLE
+     ====================================== */
+
+  .hero__header {
+    top: var(--hero-title-top) !important;
+  }
+
+  .hero__name {
+    font-size: var(--hero-title-size) !important;
+
+    transform:
+      translateY(5px)
+      scaleY(var(--hero-title-stretch)) !important;
+
+    transform-origin: center top;
+  }
+
+
+  /* ======================================
+     HERO SUBTITLE
+     ====================================== */
+
+  .hero__subtitle {
+    font-size: var(--hero-subtitle-size) !important;
+
+    margin-top: var(--hero-title-subtitle-gap) !important;
+  }
+
+
+  /* ======================================
+     FLOATING <333*
+     ====================================== */
+
+  .hero__heart {
+    top: var(--hero-heart-top) !important;
+    right: var(--hero-heart-right) !important;
+
+    font-size: var(--hero-heart-size) !important;
+  }
+
+
+  /* ======================================
+     LATEST RELEASE DATE
+     ====================================== */
+
+  .latest__date {
+    transform:
+      translateY(var(--latest-date-down)) !important;
+  }
+
+}
