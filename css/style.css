@@ -5577,3 +5577,15 @@ a.hero__social:focus-visible::after {
     gap: 8px;
   }
 }
+
+
+/* NEWSLETTER — INVISIBLE SPAM TRAP */
+
+.newsletter__trap {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
