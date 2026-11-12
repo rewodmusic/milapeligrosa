@@ -5792,30 +5792,32 @@ a.hero__social:focus-visible::after {
 
 
 /* ==========================================
-   MILA — iPHONE SAFE AREA BACKGROUND FIX
+   MILA — MOBILE ROOT BACKGROUND TEST
    ========================================== */
 
 @media (max-width: 767px) {
 
-  /* Háttérkép közvetlenül a dokumentumon is */
   html {
-    background-color: #0b0b0e !important;
-    background-image: url("../img/bg.jpg") !important;
-    background-position: center top !important;
-    background-size: auto 100lvh !important;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
+    background: #0b0b0e url("../img/bg.jpg")
+      center center / cover no-repeat !important;
+
+    min-height: 100%;
   }
 
   body {
     background: transparent !important;
+    min-height: 100%;
   }
 
-  /* A már működő fix háttér marad */
+  /* Ne legyen második, külön fix háttérkép */
   .page-background {
-    background-image: url("../img/bg.jpg") !important;
-    background-position: center center !important;
-    background-size: cover !important;
+    display: none !important;
+  }
+
+  /* A sötétítő dekoráció maradhat */
+  .page-vignette {
+    z-index: 0 !important;
+    pointer-events: none !important;
   }
 
 }
