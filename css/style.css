@@ -6087,7 +6087,7 @@ a.hero__social:focus-visible::after {
   :root {
     /* ALSÓ KITAKARÁS MAGASSÁGA */
 
-    --footer-block-height: 85px; /* ← ÁLLÍTÓ */
+    --footer-block-height: 97px; /* ← ÁLLÍTÓ */
   }
 
 }
