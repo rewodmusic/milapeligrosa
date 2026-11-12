@@ -5937,7 +5937,7 @@ a.hero__social:focus-visible::after {
        LET'S WORK TOGETHER — STAR
        ====================================== */
 
-    --business-star-size: 0.55em;
+    --business-star-size: 0.9em;
     --business-star-x: 0px;
     --business-star-y: 0px;
 
@@ -6072,6 +6072,22 @@ a.hero__social:focus-visible::after {
 
     left: var(--business-star-x) !important;
     top: var(--business-star-y) !important;
+  }
+
+}
+
+
+
+/* ==========================================
+   📱 MOBILE — INVISIBLE FOOTER WALL CONTROL
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+
+  :root {
+    /* ALSÓ KITAKARÁS MAGASSÁGA */
+
+    --footer-block-height: 85px; /* ← ÁLLÍTÓ */
   }
 
 }
