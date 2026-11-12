@@ -113,25 +113,26 @@ const title = (
     window.addEventListener('resize', update, { passive: true });
   }
 
-  function setupHeroSocials() {
-    // Site links are optional. Do not show fake, nonfunctional clickable URLs.
-    const config = {
-      instagram: '', spotify: '', tiktok: '', youtube: '', applemusic: ''
-    };
-    document.querySelectorAll('.hero__social[data-platform]').forEach(link => {
-      const name = link.dataset.platform;
-      if (name === 'mail') return;
-      const url = safeUrl(config[name]);
-      if (url) link.href = url;
-      else {
-        link.removeAttribute('href');
-        link.removeAttribute('target');
-        link.removeAttribute('rel');
-        link.title = `${name} — link coming soon`;
-        link.setAttribute('aria-disabled', 'true');
-      }
-    });
-  }
+
+function setupHeroSocials() {
+  document.querySelectorAll('.hero__social[data-platform]').forEach(link => {
+    const href = link.getAttribute('href');
+
+    if (href && href !== '#') {
+      link.removeAttribute('aria-disabled');
+      link.removeAttribute('title');
+      return;
+    }
+
+    link.removeAttribute('href');
+    link.removeAttribute('target');
+    link.removeAttribute('rel');
+
+    link.title = `${link.dataset.platform} — link coming soon`;
+    link.setAttribute('aria-disabled', 'true');
+  });
+}
+
 
   function safeUrl(value) {
     if (typeof value !== 'string') return '';

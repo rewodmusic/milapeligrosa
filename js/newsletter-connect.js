@@ -103,3 +103,40 @@ const response = await fetch(WORKER_URL, {
     init();
   }
 })();
+
+
+
+
+/* ==========================================
+   MILA — COFFEE LINK
+   ========================================== */
+
+(async function () {
+  const coffee = document.getElementById("coffee-link");
+  if (!coffee) return;
+
+  try {
+    const response = await fetch("database/site.json", {
+      cache: "no-store"
+    });
+
+    if (!response.ok) return;
+
+    const config = await response.json();
+    const url = config.buymeacoffee;
+
+    if (typeof url !== "string") return;
+
+    const parsed = new URL(url);
+
+    if (!["https:", "http:"].includes(parsed.protocol)) return;
+
+    coffee.href = parsed.href;
+    coffee.target = "_blank";
+    coffee.rel = "noopener noreferrer";
+    coffee.removeAttribute("aria-disabled");
+
+  } catch (error) {
+    console.warn("Mila coffee link unavailable:", error);
+  }
+})();
