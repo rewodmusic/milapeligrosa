@@ -1,8 +1,7 @@
 
-/* ==========================================================
-   MILA PELIGROSA — NEWSLETTER CONNECTION
-   Cloudflare Worker -> Notion
-   ========================================================== */
+/* ==========================================
+   MILA NEWSLETTER — CLOUDFLARE + NOTION
+   ========================================== */
 
 (() => {
   "use strict";
@@ -10,144 +9,98 @@
   const WORKER_URL =
     "https://mila-newsletter.mila-c4b.workers.dev";
 
-  const form = document.getElementById("newsletter-form");
-  const emailInput = document.getElementById("newsletter-email");
-  const consentInput = document.getElementById("newsletter-consent");
-  const feedback = document.getElementById("newsletter-feedback");
-  const submitButton = form?.querySelector(
-    'button[type="submit"]'
-  );
+  function init() {
+    const form = document.getElementById("newsletter-form");
+    const emailInput = document.getElementById("newsletter-email");
+    const consentInput = document.getElementById("newsletter-consent");
+    const websiteInput = document.getElementById("newsletter-website");
+    const feedback = document.getElementById("newsletter-feedback");
 
-  if (!form || !emailInput || !consentInput || !feedback) {
-    console.error("Newsletter: required elements missing");
-    return;
-  }
-
-  let submitting = false;
-
-  function showFeedback(message, isError = false) {
-    feedback.textContent = message;
-    feedback.hidden = false;
-    feedback.dataset.state = isError ? "error" : "success";
-    feedback.setAttribute("role", "status");
-  }
-
-  function clearFeedback() {
-    feedback.hidden = true;
-    feedback.textContent = "";
-    feedback.removeAttribute("data-state");
-  }
-
-  function setLoading(loading) {
-    submitting = loading;
-
-    if (!submitButton) return;
-
-    submitButton.disabled = loading;
-    submitButton.setAttribute("aria-busy", String(loading));
-
-    const label = submitButton.querySelector("span");
-
-    if (label) {
-      label.textContent = loading
-        ? "SENDING..."
-        : "SUBSCRIBE";
-    }
-  }
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-
-    // Stops the previous placeholder submission handler.
-    event.stopImmediatePropagation();
-
-    if (submitting) return;
-
-    clearFeedback();
-
-    const email = emailInput.value.trim().toLowerCase();
-
-    if (!emailInput.checkValidity() || !email) {
-      showFeedback("PLEASE ENTER A VALID EMAIL ADDRESS ♡", true);
-      emailInput.focus();
+    if (!form || !emailInput || !consentInput || !feedback) {
+      console.error("Newsletter: missing HTML elements");
       return;
     }
 
-    if (!consentInput.checked) {
-      showFeedback(
-        "PLEASE AGREE TO RECEIVE EMAILS FIRST ♡",
-        true
-      );
-      consentInput.focus();
-      return;
+    const button = form.querySelector('button[type="submit"]');
+    const buttonText = button?.querySelector("span");
+
+    let sending = false;
+
+    function showMessage(text, error = false) {
+      feedback.textContent = text;
+      feedback.dataset.state = error ? "error" : "success";
+      feedback.hidden = false;
     }
 
-    setLoading(true);
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
 
-    try {
-      const response = await fetch(WORKER_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
+      if (sending) return;
 
+      const email = emailInput.value.trim().toLowerCase();
 
-const response = await fetch(WORKER_URL, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    email,
-    consent: true,
-    website: document.getElementById("newsletter-website")?.value || ""
-  })
-});
-
-
-
-      const data = await response.json();
-
-      if (response.status === 429) {
-        showFeedback(
-          "TOO MANY ATTEMPTS! TRY AGAIN IN A MINUTE ♡",
-          true
-        );
+      if (!emailInput.checkValidity() || !email) {
+        showMessage("PLEASE ENTER A VALID EMAIL ♡", true);
         return;
       }
 
-      if (!response.ok || data.success !== true) {
-        throw new Error(data.message || "Submission failed");
+      if (!consentInput.checked) {
+        showMessage("PLEASE AGREE FIRST ♡", true);
+        return;
       }
 
-      if (data.alreadySubscribed) {
-        showFeedback("YOU'RE ALREADY ON THE LIST ♡");
-      } else {
-        showFeedback(
-          "YOU'RE ON THE LIST! THANK YOU SO MUCH ♡"
+      sending = true;
+      if (button) button.disabled = true;
+      if (buttonText) buttonText.textContent = "SENDING...";
+
+      try {
+        const response = await fetch(WORKER_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            email: email,
+            consent: true,
+            website: websiteInput?.value || ""
+          })
+        });
+
+        const result = await response.json();
+
+        if (!response.ok || result.success !== true) {
+          throw new Error(result.message || "Subscription failed");
+        }
+
+        if (result.alreadySubscribed) {
+          showMessage("YOU'RE ALREADY ON THE LIST ♡");
+        } else {
+          showMessage("YOU'RE ON THE LIST! THANK YOU ♡");
+        }
+
+        form.reset();
+
+      } catch (error) {
+        console.error("Newsletter error:", error);
+
+        showMessage(
+          "COULDN'T SUBSCRIBE RIGHT NOW. PLEASE TRY AGAIN ♡",
+          true
         );
+
+      } finally {
+        sending = false;
+        if (button) button.disabled = false;
+        if (buttonText) buttonText.textContent = "SUBSCRIBE";
       }
+    });
 
-      form.reset();
-
-    } catch (error) {
-      console.error("Newsletter submission error:", error);
-
-      showFeedback(
-        "OOPS! COULDN'T SUBSCRIBE RIGHT NOW. PLEASE TRY AGAIN ♡",
-        true
-      );
-
-    } finally {
-      setLoading(false);
-    }
+    console.log("MILA NEWSLETTER: READY ♡");
   }
 
-  // Capture phase: takes precedence over the old
-  // newsletter.js placeholder submit handler.
-  form.addEventListener("submit", handleSubmit, true);
-
-  emailInput.addEventListener("input", clearFeedback);
-  consentInput.addEventListener("change", clearFeedback);
-
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
 })();
