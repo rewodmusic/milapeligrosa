@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="Mila Peligrosa candy-style apple-music icon">
+      <title>Apple Music — Pink Bubblegum Icon</title>
+      <desc>Glossy inflated hot pink Y2K 3D candy social icon with rich raspberry shadows and turquoise highlights. Transparent background.</desc>
+      <defs>
+    <radialGradient id="jelly" cx="31%" cy="18%" r="88%">
+       <stop offset="0" stop-color="#ffccf4"/>
+       <stop offset=".20" stop-color="#ff6fca"/>
+       <stop offset=".50" stop-color="#ff23a2"/>
+       <stop offset=".78" stop-color="#e71380"/>
+       <stop offset="1" stop-color="#831046"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2=".72" y2="1">
+      <stop offset="0" stop-color="#ffe1f7"/>
+      <stop offset=".35" stop-color="#ff71c9"/>
+      <stop offset=".70" stop-color="#c91470"/>
+      <stop offset="1" stop-color="#680d3c"/>
+    </linearGradient>
+    <linearGradient id="extrusion" x1="0" y1="0" x2=".5" y2="1">
+      <stop offset="0" stop-color="#cc177b"/>
+      <stop offset=".55" stop-color="#9a1059"/>
+      <stop offset="1" stop-color="#580a35"/>
+    </linearGradient>
+    <linearGradient id="groove" x1="0" y1="0" x2=".5" y2="1">
+      <stop offset="0" stop-color="#3b0631"/>
+      <stop offset=".5" stop-color="#6a073d"/>
+      <stop offset="1" stop-color="#9e0d5b"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".93"/>
+      <stop offset=".5" stop-color="#ffedfa" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".58" stop-color="#95fff3"/>
+      <stop offset="1" stop-color="#17cdd7"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-30%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+<clipPath id="shapeClip"><path d="M204 46 C281 42 337 96 340 171 C344 255 303 321 226 334 C151 347 79 306 65 229 C51 149 100 74 175 54 C188 51 193 48 204 46 Z"/></clipPath></defs>
+      <ellipse cx="200" cy="350" rx="125" ry="23" fill="#4d082c" opacity=".28" filter="url(#shadow)"/>
+      <path d="M204 46 C281 42 337 96 340 171 C344 255 303 321 226 334 C151 347 79 306 65 229 C51 149 100 74 175 54 C188 51 193 48 204 46 Z" transform="translate(0,16)" fill="url(#extrusion)"/>
+      <path d="M204 46 C281 42 337 96 340 171 C344 255 303 321 226 334 C151 347 79 306 65 229 C51 149 100 74 175 54 C188 51 193 48 204 46 Z" fill="url(#rim)"/>
+      <path d="M204 46 C281 42 337 96 340 171 C344 255 303 321 226 334 C151 347 79 306 65 229 C51 149 100 74 175 54 C188 51 193 48 204 46 Z" transform="translate(0,-2) scale(1 .996)" fill="url(#jelly)" stroke="#ffb7e5" stroke-width="1.3"/>
+      <g clip-path="url(#shapeClip)">
+        <ellipse cx="258" cy="287" rx="122" ry="85" fill="#72033a" opacity=".25" filter="url(#soft)"/>
+        <ellipse cx="154" cy="89" rx="101" ry="43" fill="#ffe7fa" opacity=".27" filter="url(#soft)"/>
+        <path d="M94 147 C108 98 150 76 193 73 Q264 68 307 135" stroke="url(#shine)" stroke-width="18" stroke-linecap="round" fill="none" filter="url(#soft)" opacity=".55"/>
+        <path d="M101 124 Q135 77 203 75" stroke="#fff5ff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".7"/>
+        
+        <!-- Double note head, beveled dark-berry groove -->
+        <path d="M167 151 L272 124 L272 247 Q272 265 254 270 Q235 274 223 265 Q210 255 217 240 Q225 227 249 227 L249 162 L190 179 L190 257 Q188 275 168 281 Q144 289 131 277 Q119 264 132 249 Q142 239 167 237 Z" fill="#ff9bd6" opacity=".55" transform="translate(0,-3)"/>
+        <path d="M167 151 L272 124 L272 247 Q272 265 254 270 Q235 274 223 265 Q210 255 217 240 Q225 227 249 227 L249 162 L190 179 L190 257 Q188 275 168 281 Q144 289 131 277 Q119 264 132 249 Q142 239 167 237 Z" fill="url(#groove)" stroke="#710b46" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M190 161 L261 141" fill="none" stroke="#d44c98" stroke-width="5" stroke-linecap="round" opacity=".54"/>
+        <path d="M143 255 Q153 247 166 250 M228 247 Q237 240 248 242" fill="none" stroke="#ee66b0" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+        
+        <ellipse cx="116" cy="100" rx="7" ry="15" transform="rotate(26 116 100)" fill="#dcfffb" filter="url(#glow)" opacity=".7"/>
+        <ellipse cx="116" cy="100" rx="3.8" ry="9.5" transform="rotate(26 116 100)" fill="url(#spark)"/>
+        <ellipse cx="304" cy="225" rx="2.5" ry="6" transform="rotate(12 304 225)" fill="#a8fff5" opacity=".6"/>
+      </g>
+      
+    <path d="M299 92 Q303 109 320 114 Q302 119 297 135 Q292 120 276 114 Q293 109 299 92 Z" fill="#0fc8d4" opacity=".42" filter="url(#glow)"/>
+    <path d="M299 97 Q303 110 314 114 Q302 118 298 130 Q294 118 281 114 Q294 111 299 97 Z" fill="url(#spark)"/>
+    <circle cx="304" cy="114" r="2" fill="#fff"/>
+
+    </svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1170" height="342" viewBox="0 0 1170 342" role="img" aria-label="Mila Peligrosa candy-style YouTube icon and wordmark">
+      <title>YouTube — Candy Pink Logo and Wordmark</title>
+      <desc>Glossy three-dimensional inflated pink vector logo and outlined lettering with turquoise sparkles. Transparent background.</desc>
+      <defs>
+    <radialGradient id="wordFill" cx="31%" cy="3%" r="105%">
+       <stop offset="0" stop-color="#ffcdf5"/>
+       <stop offset=".22" stop-color="#ff88da"/>
+       <stop offset=".48" stop-color="#ff3caa"/>
+       <stop offset=".74" stop-color="#e51982"/>
+       <stop offset="1" stop-color="#8e114d"/>
+    </radialGradient>
+    <linearGradient id="wordRim" x1="0" y1="0" x2=".3" y2="1">
+       <stop offset="0" stop-color="#ffdcf5"/>
+       <stop offset=".4" stop-color="#ff7cc9"/>
+       <stop offset="1" stop-color="#760d43"/>
+    </linearGradient>
+    <linearGradient id="wordGlass" x1="0" y1="0" x2="0" y2="1">
+       <stop offset="0" stop-color="#fffaff" stop-opacity=".8"/>
+       <stop offset=".6" stop-color="#fffaff" stop-opacity=".12"/>
+       <stop offset="1" stop-color="#fffaff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="turqSpark" x1="0" y1="0" x2="1" y2="1">
+       <stop offset="0" stop-color="#ffffff"/>
+       <stop offset=".55" stop-color="#90fff2"/>
+       <stop offset="1" stop-color="#04c6d4"/>
+    </linearGradient>
+    <filter id="shadowBlur" x="-40%" y="-40%" width="180%" height="200%">
+       <feGaussianBlur stdDeviation="7"/>
+    </filter>
+<path id="wordShape" d="M101.745 -112.149Q101.745 -109.548 100.215 -107.1L59.058 -43.605V-7.9559999999999995Q59.058 -4.59 56.763 -2.295Q54.467999999999996 0.0 51.102 0.0Q47.888999999999996 0.0 45.593999999999994 -2.295Q43.299 -4.59 43.299 -7.9559999999999995V-43.605L2.448 -107.1Q0.765 -109.701 0.765 -111.996Q0.765 -115.209 3.1365 -117.351Q5.508 -119.493 8.721 -119.493Q11.169 -119.493 12.699 -118.422Q14.229 -117.351 15.759 -115.056L51.561 -58.293L87.975 -115.66799999999999Q90.423 -119.493 95.013 -119.493Q97.92 -119.493 99.83250000000001 -117.351Q101.745 -115.209 101.745 -112.149Z M114.29100000000001 -41.769Q114.29100000000001 -54.162 119.64600000000002 -63.801Q125.001 -73.44 134.64 -78.8715Q144.279 -84.303 156.519 -84.303Q168.606 -84.303 178.1685 -78.8715Q187.731 -73.44 193.1625 -63.801Q198.594 -54.162 198.594 -41.769Q198.594 -29.529 193.239 -19.89Q187.88400000000001 -10.251 178.32150000000001 -4.8195Q168.75900000000001 0.612 156.519 0.612Q144.279 0.612 134.64 -4.8195Q125.001 -10.251 119.64600000000002 -19.89Q114.29100000000001 -29.529 114.29100000000001 -41.769ZM183.60000000000002 -41.769Q183.60000000000002 -50.031 180.15750000000003 -56.61Q176.715 -63.189 170.51850000000002 -66.861Q164.322 -70.533 156.519 -70.533Q148.716 -70.533 142.5195 -66.861Q136.323 -63.189 132.804 -56.61Q129.285 -50.031 129.285 -41.769Q129.285 -33.507 132.804 -27.0045Q136.323 -20.502 142.5195 -16.83Q148.716 -13.158 156.519 -13.158Q164.322 -13.158 170.51850000000002 -16.83Q176.715 -20.502 180.15750000000003 -27.0045Q183.60000000000002 -33.507 183.60000000000002 -41.769Z M300.951 -76.041V-7.803Q300.951 -4.437 298.809 -2.2185Q296.66700000000003 0.0 293.148 0.0Q289.782 0.0 287.5635 -2.2185Q285.345 -4.437 285.345 -7.803V-9.486Q280.449 -4.59 273.717 -1.9124999999999999Q266.985 0.765 259.335 0.765Q248.778 0.765 240.363 -3.8249999999999997Q231.948 -8.415 227.20499999999998 -17.2125Q222.462 -26.009999999999998 222.462 -38.403V-76.041Q222.462 -79.407 224.6805 -81.62549999999999Q226.899 -83.844 230.265 -83.844Q233.631 -83.844 235.84949999999998 -81.62549999999999Q238.06799999999998 -79.407 238.06799999999998 -76.041V-38.403Q238.06799999999998 -26.009999999999998 244.7235 -19.6605Q251.379 -13.311 262.395 -13.311Q268.821 -13.311 274.09950000000003 -15.911999999999999Q279.378 -18.512999999999998 282.3615 -22.95Q285.345 -27.387 285.345 -32.894999999999996V-76.041Q285.345 -79.56 287.5635 -81.702Q289.782 -83.844 293.148 -83.844Q296.66700000000003 -83.844 298.809 -81.702Q300.951 -79.56 300.951 -76.041Z M415.85400000000004 -112.149Q415.85400000000004 -108.93599999999999 413.7885 -106.87049999999999Q411.723 -104.80499999999999 408.51 -104.80499999999999H375.615V-7.9559999999999995Q375.615 -4.59 373.32000000000005 -2.295Q371.02500000000003 0.0 367.659 0.0Q364.293 0.0 361.99800000000005 -2.295Q359.70300000000003 -4.59 359.70300000000003 -7.9559999999999995V-104.80499999999999H326.65500000000003Q323.442 -104.80499999999999 321.3765 -106.87049999999999Q319.31100000000004 -108.93599999999999 319.31100000000004 -112.149Q319.31100000000004 -115.362 321.3765 -117.4275Q323.442 -119.493 326.65500000000003 -119.493H408.51Q411.723 -119.493 413.7885 -117.4275Q415.85400000000004 -115.362 415.85400000000004 -112.149Z M511.02 -76.041V-7.803Q511.02 -4.437 508.878 -2.2185Q506.736 0.0 503.217 0.0Q499.851 0.0 497.6325 -2.2185Q495.414 -4.437 495.414 -7.803V-9.486Q490.51800000000003 -4.59 483.78600000000006 -1.9124999999999999Q477.05400000000003 0.765 469.404 0.765Q458.84700000000004 0.765 450.432 -3.8249999999999997Q442.017 -8.415 437.274 -17.2125Q432.531 -26.009999999999998 432.531 -38.403V-76.041Q432.531 -79.407 434.7495 -81.62549999999999Q436.968 -83.844 440.334 -83.844Q443.70000000000005 -83.844 445.9185 -81.62549999999999Q448.137 -79.407 448.137 -76.041V-38.403Q448.137 -26.009999999999998 454.7925 -19.6605Q461.44800000000004 -13.311 472.464 -13.311Q478.89 -13.311 484.1685 -15.911999999999999Q489.447 -18.512999999999998 492.4305 -22.95Q495.414 -27.387 495.414 -32.894999999999996V-76.041Q495.414 -79.56 497.6325 -81.702Q499.851 -83.844 503.217 -83.844Q506.736 -83.844 508.878 -81.702Q511.02 -79.56 511.02 -76.041Z M625.158 -41.922Q625.158 -29.988 619.6500000000001 -20.2725Q614.142 -10.557 604.4265 -4.9725Q594.711 0.612 582.9300000000001 0.612Q571.149 0.612 561.5865 -4.9725Q552.024 -10.557 546.4395 -20.2725Q540.855 -29.988 540.855 -41.922V-111.69Q540.855 -115.209 543.0735 -117.351Q545.292 -119.493 548.658 -119.493Q552.177 -119.493 554.319 -117.351Q556.461 -115.209 556.461 -111.69V-70.38Q561.816 -76.959 569.466 -80.631Q577.116 -84.303 585.99 -84.303Q597.0060000000001 -84.303 605.9565 -78.79499999999999Q614.907 -73.28699999999999 620.0325 -63.5715Q625.158 -53.856 625.158 -41.922ZM610.164 -41.922Q610.164 -50.031 606.5685000000001 -56.533500000000004Q602.9730000000001 -63.036 596.7765 -66.78450000000001Q590.58 -70.533 582.9300000000001 -70.533Q575.2800000000001 -70.533 569.0835000000001 -66.78450000000001Q562.8870000000001 -63.036 559.368 -56.533500000000004Q555.849 -50.031 555.849 -41.922Q555.849 -33.813 559.368 -27.234Q562.8870000000001 -20.655 569.0835000000001 -16.9065Q575.2800000000001 -13.158 582.9300000000001 -13.158Q590.58 -13.158 596.7765 -16.9065Q602.9730000000001 -20.655 606.5685000000001 -27.234Q610.164 -33.813 610.164 -41.922Z M718.7940000000001 -36.414H660.6540000000001Q662.3370000000001 -25.704 670.3695 -19.125Q678.402 -12.546 690.0300000000001 -12.546Q694.6200000000001 -12.546 699.5925000000001 -14.229Q704.565 -15.911999999999999 707.778 -18.36Q709.9200000000001 -20.043 712.8270000000001 -20.043Q715.734 -20.043 717.417 -18.512999999999998Q720.171 -16.218 720.171 -13.311Q720.171 -10.557 717.7230000000001 -8.721Q712.5210000000001 -4.59 704.7945000000001 -1.9889999999999999Q697.0680000000001 0.612 690.0300000000001 0.612Q677.484 0.612 667.539 -4.8195Q657.594 -10.251 652.0095000000001 -19.89Q646.4250000000001 -29.529 646.4250000000001 -41.769Q646.4250000000001 -54.009 651.7035000000001 -63.7245Q656.9820000000001 -73.44 666.3915000000001 -78.8715Q675.801 -84.303 687.7350000000001 -84.303Q699.5160000000001 -84.303 708.0840000000001 -79.101Q716.652 -73.899 721.2420000000001 -64.566Q725.8320000000001 -55.233 725.8320000000001 -43.146Q725.8320000000001 -40.239 723.8430000000001 -38.326499999999996Q721.854 -36.414 718.7940000000001 -36.414ZM660.8070000000001 -48.653999999999996H711.7560000000001Q710.3790000000001 -58.905 704.1060000000001 -65.025Q697.8330000000001 -71.145 687.7350000000001 -71.145Q676.566 -71.145 669.6045 -65.025Q662.643 -58.905 660.8070000000001 -48.653999999999996Z"/><clipPath id="wordClip"><use href="#wordShape"/></clipPath></defs>
+      <svg x="-10" y="-14" width="354" height="354" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><title xmlns="http://www.w3.org/2000/svg">Youtube — Pink Bubblegum Icon</title>
+      <desc xmlns="http://www.w3.org/2000/svg">Glossy inflated hot pink Y2K 3D candy social icon with rich raspberry shadows and turquoise highlights. Transparent background.</desc>
+      <defs xmlns="http://www.w3.org/2000/svg">
+    <radialGradient id="jelly" cx="31%" cy="18%" r="88%">
+       <stop offset="0" stop-color="#ffccf4"/>
+       <stop offset=".20" stop-color="#ff6fca"/>
+       <stop offset=".50" stop-color="#ff23a2"/>
+       <stop offset=".78" stop-color="#e71380"/>
+       <stop offset="1" stop-color="#831046"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2=".72" y2="1">
+      <stop offset="0" stop-color="#ffe1f7"/>
+      <stop offset=".35" stop-color="#ff71c9"/>
+      <stop offset=".70" stop-color="#c91470"/>
+      <stop offset="1" stop-color="#680d3c"/>
+    </linearGradient>
+    <linearGradient id="extrusion" x1="0" y1="0" x2=".5" y2="1">
+      <stop offset="0" stop-color="#cc177b"/>
+      <stop offset=".55" stop-color="#9a1059"/>
+      <stop offset="1" stop-color="#580a35"/>
+    </linearGradient>
+    <linearGradient id="groove" x1="0" y1="0" x2=".5" y2="1">
+      <stop offset="0" stop-color="#3b0631"/>
+      <stop offset=".5" stop-color="#6a073d"/>
+      <stop offset="1" stop-color="#9e0d5b"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".93"/>
+      <stop offset=".5" stop-color="#ffedfa" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".58" stop-color="#95fff3"/>
+      <stop offset="1" stop-color="#17cdd7"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-30%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+<clipPath id="shapeClip"><path d="M105 91 C152 79 248 75 303 88 C331 94 341 118 342 155 L344 248 C342 286 324 310 293 318 C239 332 156 334 105 322 C74 316 59 292 57 258 L57 159 C57 119 72 99 105 91 Z"/></clipPath></defs>
+      <ellipse xmlns="http://www.w3.org/2000/svg" cx="200" cy="350" rx="125" ry="23" fill="#4d082c" opacity=".28" filter="url(#shadow)"/>
+      <path xmlns="http://www.w3.org/2000/svg" d="M105 91 C152 79 248 75 303 88 C331 94 341 118 342 155 L344 248 C342 286 324 310 293 318 C239 332 156 334 105 322 C74 316 59 292 57 258 L57 159 C57 119 72 99 105 91 Z" transform="translate(0,16)" fill="url(#extrusion)"/>
+      <path xmlns="http://www.w3.org/2000/svg" d="M105 91 C152 79 248 75 303 88 C331 94 341 118 342 155 L344 248 C342 286 324 310 293 318 C239 332 156 334 105 322 C74 316 59 292 57 258 L57 159 C57 119 72 99 105 91 Z" fill="url(#rim)"/>
+      <path xmlns="http://www.w3.org/2000/svg" d="M105 91 C152 79 248 75 303 88 C331 94 341 118 342 155 L344 248 C342 286 324 310 293 318 C239 332 156 334 105 322 C74 316 59 292 57 258 L57 159 C57 119 72 99 105 91 Z" transform="translate(0,-2) scale(1 .996)" fill="url(#jelly)" stroke="#ffb7e5" stroke-width="1.3"/>
+      <g xmlns="http://www.w3.org/2000/svg" clip-path="url(#shapeClip)">
+        <ellipse cx="258" cy="287" rx="122" ry="85" fill="#72033a" opacity=".25" filter="url(#soft)"/>
+        <ellipse cx="154" cy="89" rx="101" ry="43" fill="#ffe7fa" opacity=".27" filter="url(#soft)"/>
+        <path d="M94 147 C108 98 150 76 193 73 Q264 68 307 135" stroke="url(#shine)" stroke-width="18" stroke-linecap="round" fill="none" filter="url(#soft)" opacity=".55"/>
+        <path d="M101 124 Q135 77 203 75" stroke="#fff5ff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".7"/>
+        
+        <!-- Deep play symbol recessed into candy pink YouTube lozenge -->
+        <path d="M168 141 Q162 138 162 150 L162 258 Q163 268 176 259 L268 204 Q278 197 267 190 Z" fill="#ff9ddd" opacity=".7" transform="translate(0,-7)"/>
+        <path d="M164 150 Q164 139 175 147 L266 190 Q278 197 266 205 L177 257 Q164 264 164 250 Z" fill="url(#groove)" stroke="#710c48" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M178 164 L178 233" stroke="#e758a8" stroke-opacity=".48" stroke-width="4" stroke-linecap="round"/>
+        
+        <ellipse cx="116" cy="100" rx="7" ry="15" transform="rotate(26 116 100)" fill="#dcfffb" filter="url(#glow)" opacity=".7"/>
+        <ellipse cx="116" cy="100" rx="3.8" ry="9.5" transform="rotate(26 116 100)" fill="url(#spark)"/>
+        <ellipse cx="304" cy="225" rx="2.5" ry="6" transform="rotate(12 304 225)" fill="#a8fff5" opacity=".6"/>
+      </g>
+      
+    <path xmlns="http://www.w3.org/2000/svg" d="M299 92 Q303 109 320 114 Q302 119 297 135 Q292 120 276 114 Q293 109 299 92 Z" fill="#0fc8d4" opacity=".42" filter="url(#glow)"/>
+    <path xmlns="http://www.w3.org/2000/svg" d="M299 97 Q303 110 314 114 Q302 118 298 130 Q294 118 281 114 Q294 111 299 97 Z" fill="url(#spark)"/>
+    <circle xmlns="http://www.w3.org/2000/svg" cx="304" cy="114" r="2" fill="#fff"/>
+
+    </svg>
+      <g transform="translate(377,222)">
+        <use href="#wordShape" transform="translate(1,17)" fill="#5d0b3b" opacity=".26" filter="url(#shadowBlur)"/>
+        <use href="#wordShape" transform="translate(0,12)" fill="#790d45" stroke="#790d45" stroke-width="16" stroke-linejoin="round"/>
+        <use href="#wordShape" transform="translate(0,5)" fill="#a71361" stroke="#ad0f62" stroke-width="13" stroke-linejoin="round"/>
+        <use href="#wordShape" fill="url(#wordRim)" stroke="url(#wordRim)" stroke-width="16" stroke-linejoin="round"/>
+        <use href="#wordShape" fill="url(#wordFill)" stroke="#ff76c6" stroke-width="5" stroke-linejoin="round"/>
+        <g clip-path="url(#wordClip)">
+          <ellipse cx="367.1" cy="-102.5" rx="411.2" ry="38.2" fill="url(#wordGlass)" opacity=".5"/>
+          <ellipse cx="396.5" cy="-3.1" rx="389.2" ry="26.0" fill="#7b0943" opacity=".15" filter="url(#shadowBlur)"/>
+        </g>
+        <ellipse cx="44.1" cy="-99.5" rx="25.0" ry="5.0" fill="#fff8ff" opacity=".5" transform="rotate(-15 44.1 -99.5)"/><ellipse cx="149.2" cy="-99.5" rx="25.0" ry="5.0" fill="#fff8ff" opacity=".5" transform="rotate(-15 149.2 -99.5)"/><ellipse cx="255.2" cy="-99.5" rx="25.0" ry="5.0" fill="#fff8ff" opacity=".5" transform="rotate(-15 255.2 -99.5)"/><ellipse cx="360.5" cy="-99.5" rx="25.0" ry="5.0" fill="#fff8ff" opacity=".5" transform="rotate(-15 360.5 -99.5)"/><ellipse cx="465.3" cy="-99.5" rx="25.0" ry="5.0" fill="#fff8ff" opacity=".5" transform="rotate(-15 465.3 -99.5)"/><ellipse cx="573.3" cy="-99.5" rx="25.0" ry="5.0" fill="#fff8ff" opacity=".5" transform="rotate(-15 573.3 -99.5)"/><ellipse cx="677.8" cy="-99.5" rx="25.0" ry="5.0" fill="#fff8ff" opacity=".5" transform="rotate(-15 677.8 -99.5)"/>
+      </g>
+      <path d="M1139.2 60 q4 17 22 21 q-17 5 -22 22 q-4 -17 -20 -22 q16 -4 20 -21Z" fill="url(#turqSpark)"/>
+      <ellipse cx="1086.2" cy="58" rx="5" ry="11" transform="rotate(27 1086.2 58)" fill="#8fffee"/>
+    </svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Candy Pink Spotify Icon</title>
+  <desc id="desc">A glossy, inflated hot-pink bubblegum-style Spotify icon, with deep berry-colored curved stripes and turquoise glints.</desc>
+  <defs>
+    <radialGradient id="jelly" cx="31%" cy="19%" r="85%" fx="24%" fy="13%">
+      <stop offset="0" stop-color="#ffb5ec"/>
+      <stop offset=".20" stop-color="#ff62c7"/>
+      <stop offset=".48" stop-color="#ff239f"/>
+      <stop offset=".73" stop-color="#e61384"/>
+      <stop offset="1" stop-color="#851046"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2=".72" y2="1">
+      <stop offset="0" stop-color="#ffd5f3"/>
+      <stop offset=".32" stop-color="#ff69c4"/>
+      <stop offset=".67" stop-color="#cf1475"/>
+      <stop offset="1" stop-color="#7a103e"/>
+    </linearGradient>
+    <linearGradient id="extrusion" x1="0" y1="0" x2=".5" y2="1">
+      <stop offset="0" stop-color="#cc177b"/>
+      <stop offset=".55" stop-color="#9a1059"/>
+      <stop offset="1" stop-color="#640e38"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffaff" stop-opacity=".92"/>
+      <stop offset=".56" stop-color="#ffe4f6" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="groove" x1="0" y1="0" x2=".45" y2="1">
+      <stop offset="0" stop-color="#4c0736"/>
+      <stop offset=".5" stop-color="#730941"/>
+      <stop offset="1" stop-color="#a30c59"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9ffff"/>
+      <stop offset=".55" stop-color="#91fff5"/>
+      <stop offset="1" stop-color="#12d7e1"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-25%" width="160%" height="175%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <clipPath id="blobClip">
+      <path d="M204 47 C280 40 337 99 339 172 C345 250 304 319 228 332 C151 347 79 307 65 228 C49 149 102 72 176 54 C188 51 194 49 204 47 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Deep, soft drop shadow; transparent outer background -->
+  <ellipse cx="204" cy="343" rx="127" ry="24" fill="#581336" opacity=".28" filter="url(#shadow)"/>
+
+  <!-- The chunky, lower lip of the inflated candy -->
+  <path d="M204 64 C280 57 337 116 339 189 C345 267 304 336 228 349 C151 364 79 324 65 245 C49 166 102 89 176 71 C188 68 194 66 204 64 Z" fill="url(#extrusion)"/>
+  <path d="M204 47 C280 40 337 99 339 172 C345 250 304 319 228 332 C151 347 79 307 65 228 C49 149 102 72 176 54 C188 51 194 49 204 47 Z" fill="url(#rim)"/>
+  <path d="M204 52 C274 44 332 103 334 172 C340 246 301 313 227 327 C153 340 85 304 71 227 C56 154 105 78 179 59 C189 56 196 54 204 52 Z" fill="url(#jelly)"/>
+
+  <g clip-path="url(#blobClip)">
+    <!-- Plum vignette and a rounded internal lip -->
+    <ellipse cx="257" cy="285" rx="115" ry="83" fill="#790339" opacity=".34" filter="url(#soft)"/>
+    <ellipse cx="158" cy="101" rx="94" ry="46" fill="#ffdaf4" opacity=".27" filter="url(#soft)"/>
+    <path d="M88 145 C98 94 148 68 198 68 C260 68 302 107 316 147" stroke="url(#shine)" stroke-width="19" stroke-linecap="round" fill="none" opacity=".62" filter="url(#soft)"/>
+    <path d="M97 124 C128 70 192 61 241 82" stroke="#fff4ff" stroke-width="7" stroke-linecap="round" fill="none" opacity=".64"/>
+    <path d="M293 231 C277 285 244 306 201 316" stroke="#6b0e43" stroke-width="19" stroke-linecap="round" fill="none" opacity=".26" filter="url(#soft)"/>
+    <ellipse cx="113" cy="177" rx="12" ry="46" fill="#fff6ff" opacity=".11" filter="url(#soft)"/>
+
+    <!-- Three unmistakable Spotify sound-wave bands, deeply embossed -->
+    <g fill="none" stroke-linecap="round">
+      <!-- rim around carved lines -->
+      <path d="M102 159 C147 140 209 145 268 177" stroke="#ff93d8" stroke-opacity=".59" stroke-width="27" transform="translate(0,-2)"/>
+      <path d="M111 201 C153 186 209 194 251 220" stroke="#ff8dce" stroke-opacity=".47" stroke-width="23" transform="translate(0,-1.5)"/>
+      <path d="M124 241 C158 231 201 239 235 258" stroke="#ff8dce" stroke-opacity=".43" stroke-width="19" transform="translate(0,-1)"/>
+      <!-- berry inner grooves -->
+      <path d="M102 159 C147 140 209 145 268 177" stroke="url(#groove)" stroke-width="22"/>
+      <path d="M111 201 C153 186 209 194 251 220" stroke="url(#groove)" stroke-width="18"/>
+      <path d="M124 241 C158 231 201 239 235 258" stroke="url(#groove)" stroke-width="14"/>
+      <!-- slim specular lower-rim accents -->
+      <path d="M111 166 C155 151 209 156 259 183" stroke="#ff8acc" stroke-opacity=".3" stroke-width="2.5"/>
+      <path d="M120 207 C157 195 205 201 244 225" stroke="#ff8acc" stroke-opacity=".29" stroke-width="2"/>
+      <path d="M131 247 C164 240 201 248 229 264" stroke="#ff8acc" stroke-opacity=".28" stroke-width="1.7"/>
+    </g>
+
+    <!-- Glossy pinpricks, turquoise reflections -->
+    <ellipse cx="118" cy="103" rx="8" ry="18" transform="rotate(28 118 103)" fill="#f9ffff" opacity=".72" filter="url(#glow)"/>
+    <ellipse cx="118" cy="103" rx="4" ry="11" transform="rotate(28 118 103)" fill="url(#spark)"/>
+    <ellipse cx="274" cy="96" rx="4" ry="8" transform="rotate(-38 274 96)" fill="#87fff1" opacity=".77"/>
+    <ellipse cx="302" cy="226" rx="3" ry="8" transform="rotate(18 302 226)" fill="#8ffcf7" opacity=".54"/>
+    <path d="M144 79 Q164 71 179 75" stroke="#fff7ff" stroke-width="4" stroke-linecap="round" opacity=".7" fill="none"/>
+  </g>
+
+  <!-- Four-point Y2K glitter star on the glossy edge -->
+  <path d="M296 89 Q302 109 320 115 Q301 120 295 140 Q290 121 273 114 Q290 108 296 89 Z" fill="#1ac9d4" opacity=".4" filter="url(#glow)"/>
+  <path d="M296 95 Q302 110 314 115 Q301 119 296 133 Q292 119 279 114 Q292 110 296 95 Z" fill="url(#spark)"/>
+  <circle cx="302" cy="113" r="2.4" fill="#fff" opacity=".9"/>
+</svg>
