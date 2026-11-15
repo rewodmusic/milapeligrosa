@@ -6108,3 +6108,629 @@ a.hero__social:focus-visible::after {
   }
 
 }
+
+
+
+/* ==========================================================
+   MILA SONG PAGE — ONLY SONG-SPECIFIC ADDITIONS
+   /css/style.css remains EXACTLY the same as your homepage.
+   All overrides are scoped to body.page-song.
+   ========================================================== */
+body.page-song .song-latest { padding-top:clamp(65px,10dvh,115px); }
+body.page-song .song-logo {
+  display:flex;align-items:center;justify-content:center;
+  width:100%; margin:0 auto 28px; min-height:90px;
+  text-decoration:none;
+}
+body.page-song .song-logo img { width:min(65%,285px); max-height:185px; object-fit:contain; }
+body.page-song .song-latest .latest__inner { width:min(100%,510px); }
+body.page-song .song-latest .latest__foot { margin-top:20px; }
+body.page-song .song-extras { margin:18px 0 12px; border-top:1px solid #F16AC7; }
+body.page-song .song-extra {
+  position:relative;width:100%;min-height:85px;
+  border:0;border-bottom:1px solid #F16AC7;
+  background:rgba(0,0,0,.17);color:#F16AC7;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:10px;padding:12px 12px 12px 14px;text-align:left;
+  cursor:pointer;transition:background .2s;
+}
+body.page-song .song-extra:hover,
+body.page-song .song-extra[aria-expanded="true"] {background:rgba(241,106,199,.16);}
+body.page-song .song-extra:focus-visible {outline:2px solid #F16AC7;outline-offset:-2px;}
+body.page-song .song-extra__copy {position:relative;z-index:1;display:block;flex:1;}
+body.page-song .song-extra .newsletter__message-title {
+  display:block;margin:0;font-family:'Outfit',sans-serif;font-weight:800;
+  font-size:clamp(20px,3vw,28px);letter-spacing:-.055em;line-height:.95;color:#F16AC7;
+}
+body.page-song .song-extra .newsletter__message-title span {color:#60DDE1;}
+body.page-song .song-extra .newsletter__coffee-title {
+  display:block;margin:0;color:#F16AC7;font-size:clamp(23px,3.6vw,32px);
+  font-weight:800;line-height:.86;letter-spacing:-.055em;
+}
+body.page-song .song-extra .newsletter__coffee-subtitle {
+  display:block;margin-top:7px;font-size:clamp(15px,2.5vw,19px);color:#60DDE1;
+}
+body.page-song .song-extra .newsletter__symbol,
+body.page-song .song-extra .newsletter__coffee-art {
+  position:relative!important;display:block!important;left:auto!important;right:auto!important;
+  top:auto!important;bottom:auto!important;transform:none;
+  margin:0 10px 0 auto;flex:0 0 auto;pointer-events:none;
+}
+body.page-song .song-extra .newsletter__symbol {width:34px;height:34px;font-size:0!important;line-height:0!important;animation:businessStarFloat 4s ease-in-out infinite;}
+body.page-song .song-extra .newsletter__symbol::before {display:block!important;width:34px;height:34px;}
+body.page-song .song-extra .newsletter__coffee-art {font-size:47px;line-height:1;animation:businessHeartFloat 4s ease-in-out infinite;}
+body.page-song .song-extra__chevron {font:700 24px/1 Arial,sans-serif;transition:transform .3s;}
+body.page-song .song-extra[aria-expanded="true"] .song-extra__chevron {transform:rotate(180deg);}
+body.page-song .song-accordion__panel {
+  display:grid;grid-template-rows:0fr;opacity:0;visibility:hidden;
+  transition:grid-template-rows .35s ease,opacity .35s ease,visibility .35s;
+}
+body.page-song .song-accordion__panel.is-open {grid-template-rows:1fr;opacity:1;visibility:visible;}
+body.page-song .song-accordion__inner {min-height:0;overflow:hidden;}
+body.page-song .song-newsletter-form {margin:12px 0 15px;}
+body.page-song .song-newsletter-form .newsletter__form {padding:22px 18px 20px;}
+body.page-song .song-newsletter-form .newsletter__label {font-size:10px;}
+body.page-song .song-newsletter-form .newsletter__fineprint {margin-bottom:0;}
+body.page-song .song-coffee-link {margin:15px 0 8px;min-height:62px;}
+body.page-song .song-coffee-link[aria-disabled="true"] {opacity:.45;cursor:default;}
+body.page-song .song-coffee-status {font-family:var(--mono);font-size:11px;}
+/* Main form fields retain their existing CSS and Cloudflare worker bindings. */
+body.page-song .song-latest ~ .events,
+body.page-song .song-latest ~ .business {z-index:2;}
+/* The original editorial frame must be visible immediately without a video Hero. */
+body.page-song .editorial-frame.is-visible {opacity:1;visibility:visible;}
+/* Match the homepage's carefully tuned narrow-mobile content offset. */
+@media (max-width:600px) {
+  body.page-song .song-latest {padding-top:70px;}
+  body.page-song .song-logo {min-height:72px;margin-bottom:18px;}
+  body.page-song .song-logo img {width:min(80%,230px);max-height:136px;}
+  body.page-song .song-extra {min-height:78px;padding:10px 6px;}
+  body.page-song .song-extra .newsletter__symbol,body.page-song .song-extra .newsletter__symbol::before {width:28px;height:28px;}
+  body.page-song .song-extra .newsletter__coffee-art {font-size:36px;}
+}
+@media (prefers-reduced-motion:reduce) {
+  body.page-song .song-extra,body.page-song .song-accordion__panel,
+  body.page-song .song-extra__chevron {transition:none!important;}
+  body.page-song .song-extra .newsletter__symbol,body.page-song .song-extra .newsletter__coffee-art {animation:none!important;}
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   MILA SONG PAGE — LINKTREE V2
+   05 NEWSLETTER + 06 COFFEE
+   DESKTOP + MOBILE
+   ========================================== */
+
+body.page-song {
+
+  /* ===== ÁLLÍTÓK ===== */
+
+  --extra-row-height: 74px;
+  --extra-row-height-mobile: 68px;
+
+  --extra-text-size: 23px;
+  --extra-text-size-mobile: 18px;
+
+  --extra-star-size: 36px;
+  --extra-heart-size: 42px;
+
+  --extra-star-delay: 0s;
+  --extra-heart-delay: -1.7s;
+
+  --extra-cyan: #60DDE1;
+  --extra-pink: #F16AC7;
+}
+
+
+/* ==========================================
+   01–06 EGYSÉGES LISTA
+   ========================================== */
+
+/* Nincs extra rés vagy külön felső vonal */
+
+body.page-song .latest__services {
+  margin-bottom: 0 !important;
+}
+
+body.page-song .song-extras {
+  margin: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+
+/* 05 és 06 — számozott menüpont */
+
+body.page-song .song-extra {
+  display: grid !important;
+
+  grid-template-columns: 26px minmax(0, 1fr) 44px 16px;
+
+  align-items: center;
+  column-gap: 13px;
+
+  width: 100%;
+  min-height: var(--extra-row-height);
+
+  margin: 0;
+  padding: 12px 5px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid var(--extra-pink) !important;
+
+  background: rgba(0, 0, 0, .10) !important;
+
+  text-align: left;
+  cursor: pointer;
+}
+
+body.page-song .song-extra::before {
+  display: block;
+  font: 500 10px var(--mono);
+  color: var(--extra-pink);
+  align-self: center;
+}
+
+body.page-song .song-extra--letter::before {
+  content: "05";
+}
+
+body.page-song .song-extra--coffee::before {
+  content: "06";
+}
+
+
+/* ==========================================
+   FELIRATOK — EGY SORBAN
+   ========================================== */
+
+body.page-song .song-extra__copy {
+  display: block !important;
+  min-width: 0;
+  width: 100%;
+}
+
+/* Az eredeti HTML sortöréseinek eltüntetése */
+
+body.page-song .song-extra__copy br {
+  display: none !important;
+}
+
+/* NEWSLETTER — TÜRKIZ */
+
+body.page-song .song-extra .newsletter__message-title {
+  display: inline !important;
+
+  font-family: 'Outfit', sans-serif !important;
+  font-size: var(--extra-text-size) !important;
+  font-weight: 800 !important;
+
+  color: var(--extra-cyan) !important;
+
+  letter-spacing: -.055em;
+  line-height: 1.1;
+
+  white-space: normal;
+}
+
+/* :3 — PINK */
+
+body.page-song .song-extra .newsletter__message-title span {
+  color: var(--extra-pink) !important;
+}
+
+
+/* COFFEE — TÜRKIZ */
+
+body.page-song .song-extra .newsletter__coffee-title {
+  display: inline !important;
+
+  font-family: 'Outfit', sans-serif !important;
+  font-size: var(--extra-text-size) !important;
+  font-weight: 800 !important;
+
+  color: var(--extra-cyan) !important;
+
+  letter-spacing: -.055em;
+  line-height: 1.1;
+}
+
+/* A felkiáltójel is türkiz */
+
+body.page-song .song-extra .newsletter__coffee-title span {
+  color: var(--extra-cyan) !important;
+}
+
+/* BUY ME ONE? — PINK */
+
+body.page-song .song-extra .newsletter__coffee-subtitle {
+  display: inline !important;
+
+  margin: 0 0 0 6px !important;
+
+  font-family: 'Outfit', sans-serif !important;
+  font-size: var(--extra-text-size) !important;
+  font-weight: 800 !important;
+
+  color: var(--extra-pink) !important;
+
+  letter-spacing: -.055em;
+  line-height: 1.1;
+}
+
+
+/* ==========================================
+   CSILLAG — DESKTOP + MOBILE
+   ========================================== */
+
+body.page-song .song-extra .newsletter__symbol {
+  position: relative !important;
+
+  display: block !important;
+
+  width: var(--extra-star-size) !important;
+  height: var(--extra-star-size) !important;
+
+  margin: 0 !important;
+
+  font-size: 0 !important;
+  line-height: 0 !important;
+
+  overflow: visible !important;
+
+  animation: milaSongStar 4.5s ease-in-out infinite !important;
+  animation-delay: var(--extra-star-delay) !important;
+}
+
+/* Valódi CSS csillag, nem emoji */
+
+body.page-song .song-extra .newsletter__symbol::before {
+  content: "" !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  background: var(--extra-pink) !important;
+
+  clip-path: polygon(
+    46% 0%, 54% 0%,
+    56% 34%, 76% 7%,
+    82% 13%, 65% 42%,
+    98% 35%, 100% 44%,
+    67% 50%, 100% 56%,
+    98% 65%, 65% 58%,
+    82% 87%, 76% 93%,
+    56% 66%, 54% 100%,
+    46% 100%, 44% 66%,
+    24% 93%, 18% 87%,
+    35% 58%, 2% 65%,
+    0% 56%, 33% 50%,
+    0% 44%, 2% 35%,
+    35% 42%, 18% 13%,
+    24% 7%, 44% 34%
+  );
+}
+
+
+/* ==========================================
+   SZÍV — PINK
+   ========================================== */
+
+body.page-song .song-extra .newsletter__coffee-art {
+  display: block !important;
+
+  position: relative !important;
+
+  margin: 0 !important;
+
+  font-size: var(--extra-heart-size) !important;
+  line-height: 1 !important;
+
+  color: var(--extra-pink) !important;
+
+  animation: milaSongHeart 5.2s ease-in-out infinite !important;
+  animation-delay: var(--extra-heart-delay) !important;
+}
+
+
+/* ==========================================
+   KÜLÖN ANIMÁCIÓK
+   ========================================== */
+
+@keyframes milaSongStar {
+  0%, 100% {
+    transform: translateY(0) rotate(-12deg);
+  }
+
+  50% {
+    transform: translateY(-6px) rotate(14deg);
+  }
+}
+
+@keyframes milaSongHeart {
+  0%, 100% {
+    transform: translateY(0) rotate(9deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(-8deg);
+  }
+}
+
+
+/* ==========================================
+   LENYITÓ NYÍL
+   ========================================== */
+
+body.page-song .song-extra__chevron {
+  justify-self: end;
+
+  font-size: 21px;
+  color: var(--extra-pink) !important;
+}
+
+
+/* ==========================================
+   HOVER
+   ========================================== */
+
+body.page-song .song-extra:hover,
+body.page-song .song-extra[aria-expanded="true"] {
+  background: rgba(241, 106, 199, .14) !important;
+}
+
+
+/* ==========================================
+   MOBILE ONLY
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+
+  body.page-song .song-extra {
+    min-height: var(--extra-row-height-mobile);
+    grid-template-columns: 26px minmax(0, 1fr) 28px 16px;
+    gap: 7px;
+  }
+
+  body.page-song .song-extra .newsletter__message-title,
+  body.page-song .song-extra .newsletter__coffee-title,
+  body.page-song .song-extra .newsletter__coffee-subtitle {
+    font-size: var(--extra-text-size-mobile) !important;
+  }
+
+  body.page-song .song-extra .newsletter__symbol {
+    width: 27px !important;
+    height: 27px !important;
+  }
+
+  body.page-song .song-extra .newsletter__coffee-art {
+    font-size: 32px !important;
+  }
+
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  body.page-song .song-extra .newsletter__symbol,
+  body.page-song .song-extra .newsletter__coffee-art {
+    animation: none !important;
+  }
+}
+
+
+
+
+/* ==========================================
+   MOBILE — EVENTS → CONTACT GAP FIX
+   SONG PAGE ONLY
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+
+  body.page-song {
+
+    --events-bottom-gap: 70px;  /* ← Events alatti hely */
+    --contact-top-gap: 30px;   /* ← Contact előtti hely */
+
+  }
+
+  /* Events felesleges képernyőmagasságának eltüntetése */
+
+  body.page-song #events:not([hidden]) {
+    min-height: 0 !important;
+    height: auto !important;
+
+    padding-bottom: var(--events-bottom-gap) !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Contact felső térköze */
+
+  body.page-song #business {
+    padding-top: var(--contact-top-gap) !important;
+    margin-top: 0 !important;
+  }
+
+}
+
+
+
+/* ==========================================
+   MOBILE — LINKTREE → CONTACT GAP FIX
+   WHEN EVENTS IS HIDDEN
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+
+  body.page-song {
+
+    --linktree-bottom-gap: 180px; /* ← ÁLLÍTÓ */
+    --contact-top-gap-no-events: 20px; /* ← ÁLLÍTÓ */
+
+  }
+
+  /* Linktree felesleges magasságának eltüntetése */
+
+  body.page-song:has(#events[hidden]) #latest-release {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-bottom: var(--linktree-bottom-gap) !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Contact közelebb húzása */
+
+  body.page-song:has(#events[hidden]) #business {
+    padding-top: var(--contact-top-gap-no-events) !important;
+    margin-top: 0 !important;
+  }
+
+}
+
+
+
+/* ==========================================
+   MOBILE — LINKTREE → EVENTS GAP
+   SONG PAGE ONLY
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+
+  body.page-song {
+
+    --linktree-events-gap: 180px; /* ← ÁLLÍTÓ */
+
+  }
+
+  /* Linktree felesleges magasságának eltüntetése */
+
+  body.page-song:has(#events:not([hidden])) #latest-release {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Events felső térköze */
+
+  body.page-song #events:not([hidden]) {
+    min-height: 0 !important;
+    height: auto !important;
+
+    margin-top: 0 !important;
+    padding-top: var(--linktree-events-gap) !important;
+  }
+
+}
+
+
+
+
+/* ==========================================
+   SONG PAGE — COFFEE BUTTON HEART
+   01 → ♡
+   ========================================== */
+
+body.page-song #coffee-link
+.newsletter__coffee-button-index {
+  font-size: 0 !important;
+  line-height: 1 !important;
+}
+
+/* Pink outline heart */
+
+body.page-song #coffee-link
+.newsletter__coffee-button-index::after {
+  content: "\2661";
+
+  display: inline-block;
+
+  font-family: Arial, sans-serif !important;
+  font-size: 12px; /* ← SZÍV MÉRETE */
+  font-weight: 400;
+
+  color: #F16AC7;
+
+  line-height: 1;
+  vertical-align: middle;
+}
+
+
+
+/* ==========================================
+   DESKTOP — LINKTREE → CONTACT GAP
+   WHEN EVENTS IS HIDDEN
+   ========================================== */
+
+@media screen and (min-width: 768px) {
+
+  body.page-song {
+    --desktop-linktree-contact-gap: 190px; /* ← ÁLLÍTÓ */
+  }
+
+  /* Linktree felesleges magasságának eltüntetése */
+
+  body.page-song:has(#events[hidden]) #latest-release {
+    min-height: 0 !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Contact kezdete */
+
+  body.page-song:has(#events[hidden]) #business {
+    margin-top: 0 !important;
+    padding-top: var(--desktop-linktree-contact-gap) !important;
+  }
+
+}
+
+
+
+
+
+/* ==========================================
+   DESKTOP — LINKTREE → EVENTS GAP
+   SONG PAGE ONLY
+   ========================================== */
+
+@media screen and (min-width: 768px) {
+
+  body.page-song {
+    --desktop-linktree-events-gap: 160px; /* ← ÁLLÍTÓ */
+  }
+
+  /* Linktree felesleges magasságának eltüntetése */
+
+  body.page-song:has(#events:not([hidden])) #latest-release {
+    min-height: 0 !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Events felső térköze */
+
+  body.page-song #events:not([hidden]) {
+    min-height: 0 !important;
+    height: auto !important;
+    margin-top: 0 !important;
+    padding-top: var(--desktop-linktree-events-gap) !important;
+  }
+
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#60DDE1">
+  <meta name="description" content="Listen to Mila Peligrosa on Spotify, Deezer, YouTube and Apple Music.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>MILA PELIGROSA — SONG</title>
+  <link rel="icon" href="/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800&display=swap" rel="stylesheet">
+  <!-- Original site CSS: intentionally reused in full, unchanged. -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Isolated song-only overrides, loaded last. -->
+  <link rel="stylesheet" href="/css/song.css">
+  <meta property="og:type" content="music.song">
+  <meta property="og:site_name" content="Mila Peligrosa">
+  <meta property="og:title" content="Mila Peligrosa — Listen Now">
+  <meta property="og:description" content="Listen to Mila Peligrosa on your favorite streaming platform.">
+  <meta property="og:image" content="https://milapeligrosa.com/img/og-pic.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="/js/song.js" defer></script>
+  <!-- The proven original form handlers are reused verbatim. -->
+  <script src="/js/newsletter-connect.js?v=5" defer></script>
+  <script src="/js/contact.js" defer></script>
+</head>
+<body class="page-song">
+  <div class="page-background" aria-hidden="true"></div>
+  <div class="page-vignette" aria-hidden="true"></div>
+  <aside aria-label="Mila Peligrosa editorial design" class="editorial-frame" id="editorial-frame">
+<div aria-label="Latest release typography" class="frame-quotes">
+<div class="frame-quote frame-quote--bold" id="lyrics-left-1"></div>
+<span aria-hidden="true" class="frame-rule"></span>
+<div class="frame-quote frame-quote--thin" id="lyrics-left-2"></div>
+<span aria-hidden="true" class="frame-rule"></span>
+<div class="frame-quote frame-quote--bold" id="lyrics-left-3"></div>
+<span aria-hidden="true" class="frame-rule"></span>
+<div class="frame-quote frame-quote--thin" id="lyrics-left-4"></div>
+</div>
+<div class="frame-bottom-left">
+<span class="frame-above-barcode" id="barcode-caption"></span>
+<div class="frame-bottom-lineup">
+<svg aria-label="Decorative barcode" class="frame-barcode" preserveaspectratio="none" role="img" viewbox="0 0 116 39">
+<g fill="currentColor">
+<path d="M0 0h2v39H0zm4 0h1v39H4zm8 0h3v39h-3zm6 0h1v39h-1zm4 0h2v39h-2zm7 0h1v39h-1zm5 0h3v39h-3zm6 0h1v39h-1zm4 0h2v39h-2zm5 0h1v39h-1zm4 0h4v39h-4zm7 0h1v39h-1zm5 0h2v39h-2zm5 0h1v39h-1zm3 0h3v39h-3zm7 0h1v39h-1zm4 0h3v39h-3zm5 0h1v39h-1zm5 0h2v39h-2zm4 0h1v39h-1zm5 0h4v39h-4zm7 0h1v39h-1zm4 0h2v39h-2zm6 0h1v39h-1zm5 0h3v39h-3z"></path>
+</g>
+</svg>
+<div class="frame-bottom-vertical frame-bottom-vertical--thin" id="barcode-thin"></div>
+<div class="frame-bottom-vertical frame-bottom-vertical--bold" id="barcode-bold"></div>
+</div>
+</div>
+<div class="frame-bottom-right">
+<span class="frame-copyright" id="frame-copyright">©2026</span>
+<span class="frame-copyright-note">MILA PELIGROSA / EDITION</span>
+</div>
+</aside>
+  <main>
+    <section class="latest song-latest" id="latest-release" aria-label="Song links">
+      <div class="latest__inner">
+        <a class="song-logo" href="/" aria-label="Mila Peligrosa home">
+          <img src="/img/logo.png" alt="Mila Peligrosa logo">
+        </a>
+        <div class="latest__cover-frame" id="latest-cover-frame">
+          <div class="latest__cover-placeholder" id="latest-cover-placeholder">MILA<br>PELIGROSA</div>
+          <img class="latest__cover" id="latest-cover" alt="Album cover" hidden>
+        </div>
+        <div class="latest__release-info">
+          <span class="latest__artist">MILA PELIGROSA</span>
+          <h1 class="latest__track" id="latest-track" aria-live="polite">LOADING...</h1>
+          <span class="latest__prompt">CHOOSE A SERVICE</span>
+        </div>
+        <div class="latest__services" id="latest-services" aria-label="Listen to this release"></div>
+
+        <!-- Compact widgets: only the desired half of the newsletter / coffee. -->
+        <div class="song-extras" aria-label="More from Mila">
+          <button type="button" class="song-extra song-extra--letter" aria-expanded="false" aria-controls="song-letter-panel" id="song-letter-toggle">
+            <span class="song-extra__copy"><span class="newsletter__message-title">get a letter<br>from me <span>:3</span></span></span>
+            <span class="newsletter__symbol song-extra__star" aria-hidden="true">✳</span>
+            <span class="song-extra__chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="song-accordion__panel" id="song-letter-panel" inert>
+            <div class="song-accordion__inner">
+              <div class="newsletter__subscribe song-newsletter-form">
+                <form class="newsletter__form" id="newsletter-form" novalidate="" onsubmit="event.preventDefault();">
+<!-- ANTI-SPAM HONEYPOT — DO NOT REMOVE -->
+<label class="newsletter__label" for="newsletter-email">
+    YOUR EMAIL ADDRESS
+  </label>
+<div class="newsletter__input-row">
+<input autocomplete="email" class="newsletter__input" id="newsletter-email" inputmode="email" maxlength="254" name="email" placeholder="you@example.com" required="" type="email"/>
+<button class="newsletter__submit" type="submit">
+<span>SUBSCRIBE</span>
+<span aria-hidden="true">↗</span>
+</button>
+</div>
+<!-- NEWSLETTER CONSENT -->
+<label class="newsletter__consent">
+<input id="newsletter-consent" required="" type="checkbox"/>
+<span>
+      i agree to receive occasional emails from mila.
+      i can unsubscribe anytime ♡
+    </span>
+</label>
+<!-- SUBMISSION FEEDBACK -->
+<p aria-live="polite" class="newsletter__feedback" hidden="" id="newsletter-feedback" role="status"></p>
+<p class="newsletter__fineprint" id="newsletter-note">
+    occasional letters. no spam. promise ♡
+  </p>
+</form>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="song-extra song-extra--coffee" aria-expanded="false" aria-controls="song-coffee-panel" id="song-coffee-toggle">
+            <span class="song-extra__copy"><span class="newsletter__coffee-title">i love<br>coffee<span>!</span></span><span class="newsletter__coffee-subtitle">buy me one?</span></span>
+            <span class="newsletter__coffee-art song-extra__heart" aria-hidden="true">♡</span>
+            <span class="song-extra__chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="song-accordion__panel" id="song-coffee-panel" inert>
+            <div class="song-accordion__inner">
+              <a class="newsletter__coffee-button song-coffee-link" id="coffee-link" href="#" aria-disabled="true">
+                <span class="newsletter__coffee-button-index">01</span>
+                <span class="newsletter__coffee-button-text">BUY ME A COFFEE</span>
+                <span class="newsletter__coffee-button-arrow" aria-hidden="true">↗</span>
+              </a>
+              <p class="song-coffee-status" id="song-coffee-status" hidden>COFFEE LINK COMING SOON ♡</p>
+            </div>
+          </div>
+        </div>
+        <div class="latest__foot"><span>NOW STREAMING</span><span>© MILA PELIGROSA</span></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="events-heading" class="events" hidden="" id="events">
+<div class="events__inner">
+<div class="events__heading-row">
+<span class="events__index">03 / LIVE</span>
+<h2 class="events__heading" id="events-heading">
+        EVENTS
+      </h2>
+<span class="events__heading-note">UPCOMING</span>
+</div>
+<div aria-live="polite" class="events__list" id="events-list"></div>
+<div class="events__foot">
+<span>LIVE SHOWS / MILA PELIGROSA</span>
+<span>SEE YOU THERE</span>
+</div>
+<!-- FLOATING PINK HEART -->
+<div class="events__heart-wrap">
+<span aria-hidden="true" class="events__heart">
+    &lt;333*
+  </span>
+</div>
+</div>
+</section>
+    <section aria-labelledby="business-heading" class="business" id="business">
+<div class="business__inner">
+<!-- EDITORIAL HEADING -->
+<div class="business__heading-row">
+<span class="business__index">
+        07 / CONTACT
+      </span>
+<h2 class="business__heading" id="business-heading">
+        LET'S<br/>
+        WORK <span>TOGETHER</span><i>*</i>
+</h2>
+<span class="business__heading-note">
+        OPEN FOR IDEAS ♡
+      </span>
+</div>
+<!-- INTRO -->
+<div class="business__intro-row">
+<p class="business__intro">
+        have something in mind?<br/>
+        let's make it happen &lt;3
+      </p>
+<span aria-hidden="true" class="business__intro-decoration">
+        ♡
+      </span>
+</div>
+<!-- CONTACT FORM -->
+<form action="https://api.web3forms.com/submit" class="business__form" id="business-form" method="POST">
+<!-- WEB3FORMS -->
+<input name="access_key" type="hidden" value="065aa222-7343-45d6-ae0d-a0cb8bf0b975"/>
+<input name="subject" type="hidden" value="New Business Inquiry - Mila Peligrosa"/>
+<input name="from_name" type="hidden" value="Mila Peligrosa Website"/>
+<!-- ANTI-SPAM -->
+<input autocomplete="off" name="botcheck" style="display:none" tabindex="-1" type="checkbox"/>
+<!-- FORM TOP BAR -->
+<div class="business__form-top">
+<span>BUSINESS INQUIRIES / 001</span>
+<span>FROM YOU, TO MILA ♡</span>
+</div>
+<!-- INQUIRY TYPE -->
+<fieldset class="business__fieldset">
+<legend class="business__label">
+          01 / WHAT'S THIS ABOUT? *
+        </legend>
+<div class="business__categories">
+<label class="business__category">
+<input name="inquiry_type" required="" type="radio" value="Brand Deal"/>
+<span>BRAND DEAL</span>
+</label>
+<label class="business__category">
+<input name="inquiry_type" type="radio" value="Booking"/>
+<span>BOOKING</span>
+</label>
+<label class="business__category">
+<input name="inquiry_type" type="radio" value="Collaboration"/>
+<span>COLLAB</span>
+</label>
+<label class="business__category">
+<input name="inquiry_type" type="radio" value="Other"/>
+<span>OTHER</span>
+</label>
+</div>
+</fieldset>
+<!-- NAME + EMAIL -->
+<div class="business__field-grid">
+<div class="business__field">
+<label class="business__label" for="business-name">
+            02 / YOUR NAME *
+          </label>
+<input autocomplete="name" class="business__input" id="business-name" maxlength="100" name="name" placeholder="your name..." required="" type="text"/>
+</div>
+<div class="business__field">
+<label class="business__label" for="business-email">
+            03 / YOUR EMAIL *
+          </label>
+<input autocomplete="email" class="business__input" id="business-email" maxlength="254" name="email" placeholder="your@email.com" required="" type="email"/>
+</div>
+</div>
+<!-- COMPANY -->
+<div class="business__field">
+<label class="business__label" for="business-company">
+          04 / COMPANY OR ORGANIZATION
+          <span>OPTIONAL</span>
+</label>
+<input autocomplete="organization" class="business__input" id="business-company" maxlength="150" name="company" placeholder="who are you representing?" type="text"/>
+</div>
+<!-- MESSAGE -->
+<div class="business__field">
+<label class="business__label" for="business-message">
+          05 / TELL ME EVERYTHING *
+        </label>
+<textarea class="business__textarea" id="business-message" maxlength="5000" minlength="10" name="message" placeholder="tell me about your idea, project, event, or anything else..." required="" rows="7"></textarea>
+<div class="business__field-bottom">
+<span>THE MORE DETAILS, THE BETTER ♡</span>
+<span id="business-char-count">0 / 5000</span>
+</div>
+</div>
+<!-- PRIVACY -->
+<label class="business__privacy">
+<input id="business-consent" name="privacy_consent" required="" type="checkbox" value="Agreed"/>
+<span>
+          i agree to my details being used to respond
+          to this inquiry and understand that the
+          form is processed via Web3Forms.
+          <a href="https://web3forms.com/privacy" rel="noopener noreferrer" target="_blank">
+            privacy policy ↗
+          </a>
+</span>
+</label>
+<!-- SEND BUTTON -->
+<button class="business__submit" id="business-submit" type="submit">
+<span class="business__submit-text">
+          SEND INQUIRY
+        </span>
+<span aria-hidden="true" class="business__submit-arrow">
+          ↗
+        </span>
+</button>
+<!-- RESPONSE -->
+<p aria-live="polite" class="business__feedback" hidden="" id="business-feedback" role="status"></p>
+<div class="business__form-bottom">
+<span>ONLY BUSINESS INQUIRIES, PLEASE ♡</span>
+<span>LET'S CREATE SOMETHING</span>
+</div>
+</form>
+</div>
+</section>
+  </main>
+</body>
+</html>
