@@ -6734,3 +6734,32 @@ body.page-song #coffee-link
   }
 
 }
+
+
+
+
+/* ==========================================
+   MILA PELIGROSA — SONG LOGO CONTROLS
+   ========================================== */
+
+/* 💻 DESKTOP */
+@media screen and (min-width: 768px) {
+  body.page-song .song-latest {
+    padding-top: 45px !important; /* LOGÓ FELETTI GAP */
+  }
+
+  body.page-song .song-logo img {
+    width: min(65%, 285px); /* LOGÓ MÉRETE */
+  }
+}
+
+/* 📱 MOBILE */
+@media screen and (max-width: 767px) {
+  body.page-song .song-latest {
+    padding-top: 25px !important; /* LOGÓ FELETTI GAP */
+  }
+
+  body.page-song .song-logo img {
+    width: min(80%, 230px); /* LOGÓ MÉRETE */
+  }
+}
